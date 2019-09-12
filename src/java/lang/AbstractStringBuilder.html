@@ -1,0 +1,2380 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AbstractStringBuilder · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="StringBuffer.html" />
+    
+    
+    <link rel="prev" href="String.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../java.html">
+            
+                <a href="../../java.html">
+            
+                    
+                    java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../lang.html">
+            
+                <a href="../lang.html">
+            
+                    
+                    lang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="instrument.html">
+            
+                <a href="instrument.html">
+            
+                    
+                    instrument
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="invoke.html">
+            
+                <a href="invoke.html">
+            
+                    
+                    invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="management.html">
+            
+                <a href="management.html">
+            
+                    
+                    mangement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="ref.html">
+            
+                <a href="ref.html">
+            
+                    
+                    ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="reflect.html">
+            
+                <a href="reflect.html">
+            
+                    
+                    reflect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="Object.html">
+            
+                <a href="Object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="Number.html">
+            
+                <a href="Number.html">
+            
+                    
+                    Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="Boolean.html">
+            
+                <a href="Boolean.html">
+            
+                    
+                    Boolean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="Character.html">
+            
+                <a href="Character.html">
+            
+                    
+                    Character
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="Byte.html">
+            
+                <a href="Byte.html">
+            
+                    
+                    Byte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="Short.html">
+            
+                <a href="Short.html">
+            
+                    
+                    Short
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="Integer.html">
+            
+                <a href="Integer.html">
+            
+                    
+                    Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="Long.html">
+            
+                <a href="Long.html">
+            
+                    
+                    Long
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="Float.html">
+            
+                <a href="Float.html">
+            
+                    
+                    Float
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.16" data-path="Double.html">
+            
+                <a href="Double.html">
+            
+                    
+                    Double
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.17" data-path="Enum.html">
+            
+                <a href="Enum.html">
+            
+                    
+                    Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.18" data-path="Void.html">
+            
+                <a href="Void.html">
+            
+                    
+                    Void
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.19" data-path="String.html">
+            
+                <a href="String.html">
+            
+                    
+                    String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.20" data-path="AbstractStringBuilder.html">
+            
+                <a href="AbstractStringBuilder.html">
+            
+                    
+                    AbstractStringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.21" data-path="StringBuffer.html">
+            
+                <a href="StringBuffer.html">
+            
+                    
+                    StringBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.22" data-path="StringBuilder.html">
+            
+                <a href="StringBuilder.html">
+            
+                    
+                    StringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.23" data-path="Math.html">
+            
+                <a href="Math.html">
+            
+                    
+                    Math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.24" data-path="StrictMath.html">
+            
+                <a href="StrictMath.html">
+            
+                    
+                    StrictMath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.25" data-path="System.html">
+            
+                <a href="System.html">
+            
+                    
+                    System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.26" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.27" data-path="Thread.html">
+            
+                <a href="Thread.html">
+            
+                    
+                    Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.28" data-path="Runtime.html">
+            
+                <a href="Runtime.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.29" data-path="Compiler.html">
+            
+                <a href="Compiler.html">
+            
+                    
+                    Compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.30" data-path="Package.html">
+            
+                <a href="Package.html">
+            
+                    
+                    Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.31" data-path="Class.html">
+            
+                <a href="Class.html">
+            
+                    
+                    Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.32" data-path="ClassLoader.html">
+            
+                <a href="ClassLoader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.33" data-path="Throwable.html">
+            
+                <a href="Throwable.html">
+            
+                    
+                    Throwable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.34" data-path="Error.html">
+            
+                <a href="Error.html">
+            
+                    
+                    Error
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.35" data-path="Exception.html">
+            
+                <a href="Exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../util.html">
+            
+                <a href="../util.html">
+            
+                    
+                    util
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../math.html">
+            
+                <a href="../math.html">
+            
+                    
+                    math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../io.html">
+            
+                <a href="../io.html">
+            
+                    
+                    io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../net.html">
+            
+                <a href="../net.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../sql.html">
+            
+                <a href="../sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../time.html">
+            
+                <a href="../time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../text.html">
+            
+                <a href="../text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../beans.html">
+            
+                <a href="../beans.html">
+            
+                    
+                    beans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../rmi.html">
+            
+                <a href="../rmi.html">
+            
+                    
+                    rmi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../security.html">
+            
+                <a href="../security.html">
+            
+                    
+                    security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../applet.html">
+            
+                <a href="../applet.html">
+            
+                    
+                    applet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../awt.html">
+            
+                <a href="../awt.html">
+            
+                    
+                    awt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../javax.html">
+            
+                <a href="../../javax.html">
+            
+                    
+                    javax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >AbstractStringBuilder</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="abstract-class-javalangabstractstringbuilder">abstract class java.lang.AbstractStringBuilder</h1>
+<p><a href="#source-analysis">source analysis</a></p>
+<p><a href="#source-code">source code</a></p>
+<h2 id="source-analysis">source analysis</h2>
+<h2 id="source-code">source code</h2>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * Copyright (c) 2003, 2016, Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-keyword">package</span> java.lang;
+
+<span class="hljs-keyword">import</span> sun.misc.FloatingDecimal;
+<span class="hljs-keyword">import</span> java.util.Arrays;
+
+<span class="hljs-comment">/**
+ * A mutable sequence of characters.
+ * &lt;p&gt;
+ * Implements a modifiable string. At any point in time it contains some
+ * particular sequence of characters, but the length and content of the
+ * sequence can be changed through certain method calls.
+ *
+ * &lt;p&gt;Unless otherwise noted, passing a {<span class="hljs-doctag">@code</span> null} argument to a constructor
+ * or method in this class will cause a {<span class="hljs-doctag">@link</span> NullPointerException} to be
+ * thrown.
+ *
+ * <span class="hljs-doctag">@author</span>      Michael McCloskey
+ * <span class="hljs-doctag">@author</span>      Martin Buchholz
+ * <span class="hljs-doctag">@author</span>      Ulf Zibis
+ * <span class="hljs-doctag">@since</span>       1.5
+ */</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbstractStringBuilder</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Appendable</span>, <span class="hljs-title">CharSequence</span> </span>{
+    <span class="hljs-comment">/**
+     * The value is used for character storage.
+     */</span>
+    <span class="hljs-keyword">char</span>[] value;
+
+    <span class="hljs-comment">/**
+     * The count is the number of characters used.
+     */</span>
+    <span class="hljs-keyword">int</span> count;
+
+    <span class="hljs-comment">/**
+     * This no-arg constructor is necessary for serialization of subclasses.
+     */</span>
+    AbstractStringBuilder() {
+    }
+
+    <span class="hljs-comment">/**
+     * Creates an AbstractStringBuilder of the specified capacity.
+     */</span>
+    AbstractStringBuilder(<span class="hljs-keyword">int</span> capacity) {
+        value = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[capacity];
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the length (character count).
+     *
+     * <span class="hljs-doctag">@return</span>  the length of the sequence of characters currently
+     *          represented by this object
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">length</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> count;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the current capacity. The capacity is the amount of storage
+     * available for newly inserted characters, beyond which an allocation
+     * will occur.
+     *
+     * <span class="hljs-doctag">@return</span>  the current capacity
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">capacity</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> value.length;
+    }
+
+    <span class="hljs-comment">/**
+     * Ensures that the capacity is at least equal to the specified minimum.
+     * If the current capacity is less than the argument, then a new internal
+     * array is allocated with greater capacity. The new capacity is the
+     * larger of:
+     * &lt;ul&gt;
+     * &lt;li&gt;The {<span class="hljs-doctag">@code</span> minimumCapacity} argument.
+     * &lt;li&gt;Twice the old capacity, plus {<span class="hljs-doctag">@code</span> 2}.
+     * &lt;/ul&gt;
+     * If the {<span class="hljs-doctag">@code</span> minimumCapacity} argument is nonpositive, this
+     * method takes no action and simply returns.
+     * Note that subsequent operations on this object can reduce the
+     * actual capacity below that requested here.
+     *
+     * <span class="hljs-doctag">@param</span>   minimumCapacity   the minimum desired capacity.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ensureCapacity</span><span class="hljs-params">(<span class="hljs-keyword">int</span> minimumCapacity)</span> </span>{
+        <span class="hljs-keyword">if</span> (minimumCapacity &gt; <span class="hljs-number">0</span>)
+            ensureCapacityInternal(minimumCapacity);
+    }
+
+    <span class="hljs-comment">/**
+     * For positive values of {<span class="hljs-doctag">@code</span> minimumCapacity}, this method
+     * behaves like {<span class="hljs-doctag">@code</span> ensureCapacity}, however it is never
+     * synchronized.
+     * If {<span class="hljs-doctag">@code</span> minimumCapacity} is non positive due to numeric
+     * overflow, this method throws {<span class="hljs-doctag">@code</span> OutOfMemoryError}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ensureCapacityInternal</span><span class="hljs-params">(<span class="hljs-keyword">int</span> minimumCapacity)</span> </span>{
+        <span class="hljs-comment">// overflow-conscious code</span>
+        <span class="hljs-keyword">if</span> (minimumCapacity - value.length &gt; <span class="hljs-number">0</span>) {
+            value = Arrays.copyOf(value,
+                    newCapacity(minimumCapacity));
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * The maximum size of array to allocate (unless necessary).
+     * Some VMs reserve some header words in an array.
+     * Attempts to allocate larger arrays may result in
+     * OutOfMemoryError: Requested array size exceeds VM limit
+     */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_ARRAY_SIZE = Integer.MAX_VALUE - <span class="hljs-number">8</span>;
+
+    <span class="hljs-comment">/**
+     * Returns a capacity at least as large as the given minimum capacity.
+     * Returns the current capacity increased by the same amount + 2 if
+     * that suffices.
+     * Will not return a capacity greater than {<span class="hljs-doctag">@code</span> MAX_ARRAY_SIZE}
+     * unless the given minimum capacity is greater than that.
+     *
+     * <span class="hljs-doctag">@param</span>  minCapacity the desired minimum capacity
+     * <span class="hljs-doctag">@throws</span> OutOfMemoryError if minCapacity is less than zero or
+     *         greater than Integer.MAX_VALUE
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">newCapacity</span><span class="hljs-params">(<span class="hljs-keyword">int</span> minCapacity)</span> </span>{
+        <span class="hljs-comment">// overflow-conscious code</span>
+        <span class="hljs-keyword">int</span> newCapacity = (value.length &lt;&lt; <span class="hljs-number">1</span>) + <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">if</span> (newCapacity - minCapacity &lt; <span class="hljs-number">0</span>) {
+            newCapacity = minCapacity;
+        }
+        <span class="hljs-keyword">return</span> (newCapacity &lt;= <span class="hljs-number">0</span> || MAX_ARRAY_SIZE - newCapacity &lt; <span class="hljs-number">0</span>)
+            ? hugeCapacity(minCapacity)
+            : newCapacity;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hugeCapacity</span><span class="hljs-params">(<span class="hljs-keyword">int</span> minCapacity)</span> </span>{
+        <span class="hljs-keyword">if</span> (Integer.MAX_VALUE - minCapacity &lt; <span class="hljs-number">0</span>) { <span class="hljs-comment">// overflow</span>
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> OutOfMemoryError();
+        }
+        <span class="hljs-keyword">return</span> (minCapacity &gt; MAX_ARRAY_SIZE)
+            ? minCapacity : MAX_ARRAY_SIZE;
+    }
+
+    <span class="hljs-comment">/**
+     * Attempts to reduce storage used for the character sequence.
+     * If the buffer is larger than necessary to hold its current sequence of
+     * characters, then it may be resized to become more space efficient.
+     * Calling this method may, but is not required to, affect the value
+     * returned by a subsequent call to the {<span class="hljs-doctag">@link</span> #capacity()} method.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">trimToSize</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (count &lt; value.length) {
+            value = Arrays.copyOf(value, count);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Sets the length of the character sequence.
+     * The sequence is changed to a new character sequence
+     * whose length is specified by the argument. For every nonnegative
+     * index &lt;i&gt;k&lt;/i&gt; less than {<span class="hljs-doctag">@code</span> newLength}, the character at
+     * index &lt;i&gt;k&lt;/i&gt; in the new character sequence is the same as the
+     * character at index &lt;i&gt;k&lt;/i&gt; in the old sequence if &lt;i&gt;k&lt;/i&gt; is less
+     * than the length of the old character sequence; otherwise, it is the
+     * null character {<span class="hljs-doctag">@code</span> &apos;\u005Cu0000&apos;}.
+     *
+     * In other words, if the {<span class="hljs-doctag">@code</span> newLength} argument is less than
+     * the current length, the length is changed to the specified length.
+     * &lt;p&gt;
+     * If the {<span class="hljs-doctag">@code</span> newLength} argument is greater than or equal
+     * to the current length, sufficient null characters
+     * ({<span class="hljs-doctag">@code</span> &apos;\u005Cu0000&apos;}) are appended so that
+     * length becomes the {<span class="hljs-doctag">@code</span> newLength} argument.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> newLength} argument must be greater than or equal
+     * to {<span class="hljs-doctag">@code</span> 0}.
+     *
+     * <span class="hljs-doctag">@param</span>      newLength   the new length
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if the
+     *               {<span class="hljs-doctag">@code</span> newLength} argument is negative.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLength</span><span class="hljs-params">(<span class="hljs-keyword">int</span> newLength)</span> </span>{
+        <span class="hljs-keyword">if</span> (newLength &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(newLength);
+        ensureCapacityInternal(newLength);
+
+        <span class="hljs-keyword">if</span> (count &lt; newLength) {
+            Arrays.fill(value, count, newLength, <span class="hljs-string">&apos;\0&apos;</span>);
+        }
+
+        count = newLength;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the {<span class="hljs-doctag">@code</span> char} value in this sequence at the specified index.
+     * The first {<span class="hljs-doctag">@code</span> char} value is at index {<span class="hljs-doctag">@code</span> 0}, the next at index
+     * {<span class="hljs-doctag">@code</span> 1}, and so on, as in array indexing.
+     * &lt;p&gt;
+     * The index argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than the length of this sequence.
+     *
+     * &lt;p&gt;If the {<span class="hljs-doctag">@code</span> char} value specified by the index is a
+     * &lt;a href=&quot;Character.html#unicode&quot;&gt;surrogate&lt;/a&gt;, the surrogate
+     * value is returned.
+     *
+     * <span class="hljs-doctag">@param</span>      index   the index of the desired {<span class="hljs-doctag">@code</span> char} value.
+     * <span class="hljs-doctag">@return</span>     the {<span class="hljs-doctag">@code</span> char} value at the specified index.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> index} is
+     *             negative or greater than or equal to {<span class="hljs-doctag">@code</span> length()}.
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">char</span> <span class="hljs-title">charAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span> ((index &lt; <span class="hljs-number">0</span>) || (index &gt;= count))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        <span class="hljs-keyword">return</span> value[index];
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the character (Unicode code point) at the specified
+     * index. The index refers to {<span class="hljs-doctag">@code</span> char} values
+     * (Unicode code units) and ranges from {<span class="hljs-doctag">@code</span> 0} to
+     * {<span class="hljs-doctag">@link</span> #length()}{<span class="hljs-doctag">@code</span>  - 1}.
+     *
+     * &lt;p&gt; If the {<span class="hljs-doctag">@code</span> char} value specified at the given index
+     * is in the high-surrogate range, the following index is less
+     * than the length of this sequence, and the
+     * {<span class="hljs-doctag">@code</span> char} value at the following index is in the
+     * low-surrogate range, then the supplementary code point
+     * corresponding to this surrogate pair is returned. Otherwise,
+     * the {<span class="hljs-doctag">@code</span> char} value at the given index is returned.
+     *
+     * <span class="hljs-doctag">@param</span>      index the index to the {<span class="hljs-doctag">@code</span> char} values
+     * <span class="hljs-doctag">@return</span>     the code point value of the character at the
+     *             {<span class="hljs-doctag">@code</span> index}
+     * <span class="hljs-doctag">@exception</span>  IndexOutOfBoundsException  if the {<span class="hljs-doctag">@code</span> index}
+     *             argument is negative or not less than the length of this
+     *             sequence.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">codePointAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span> ((index &lt; <span class="hljs-number">0</span>) || (index &gt;= count)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        }
+        <span class="hljs-keyword">return</span> Character.codePointAtImpl(value, index, count);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the character (Unicode code point) before the specified
+     * index. The index refers to {<span class="hljs-doctag">@code</span> char} values
+     * (Unicode code units) and ranges from {<span class="hljs-doctag">@code</span> 1} to {<span class="hljs-doctag">@link</span>
+     * #length()}.
+     *
+     * &lt;p&gt; If the {<span class="hljs-doctag">@code</span> char} value at {<span class="hljs-doctag">@code</span> (index - 1)}
+     * is in the low-surrogate range, {<span class="hljs-doctag">@code</span> (index - 2)} is not
+     * negative, and the {<span class="hljs-doctag">@code</span> char} value at {<span class="hljs-doctag">@code</span> (index -
+     * 2)} is in the high-surrogate range, then the
+     * supplementary code point value of the surrogate pair is
+     * returned. If the {<span class="hljs-doctag">@code</span> char} value at {<span class="hljs-doctag">@code</span> index -
+     * 1} is an unpaired low-surrogate or a high-surrogate, the
+     * surrogate value is returned.
+     *
+     * <span class="hljs-doctag">@param</span>     index the index following the code point that should be returned
+     * <span class="hljs-doctag">@return</span>    the Unicode code point value before the given index.
+     * <span class="hljs-doctag">@exception</span> IndexOutOfBoundsException if the {<span class="hljs-doctag">@code</span> index}
+     *            argument is less than 1 or greater than the length
+     *            of this sequence.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">codePointBefore</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">int</span> i = index - <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">if</span> ((i &lt; <span class="hljs-number">0</span>) || (i &gt;= count)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        }
+        <span class="hljs-keyword">return</span> Character.codePointBeforeImpl(value, index, <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the number of Unicode code points in the specified text
+     * range of this sequence. The text range begins at the specified
+     * {<span class="hljs-doctag">@code</span> beginIndex} and extends to the {<span class="hljs-doctag">@code</span> char} at
+     * index {<span class="hljs-doctag">@code</span> endIndex - 1}. Thus the length (in
+     * {<span class="hljs-doctag">@code</span> char}s) of the text range is
+     * {<span class="hljs-doctag">@code</span> endIndex-beginIndex}. Unpaired surrogates within
+     * this sequence count as one code point each.
+     *
+     * <span class="hljs-doctag">@param</span> beginIndex the index to the first {<span class="hljs-doctag">@code</span> char} of
+     * the text range.
+     * <span class="hljs-doctag">@param</span> endIndex the index after the last {<span class="hljs-doctag">@code</span> char} of
+     * the text range.
+     * <span class="hljs-doctag">@return</span> the number of Unicode code points in the specified text
+     * range
+     * <span class="hljs-doctag">@exception</span> IndexOutOfBoundsException if the
+     * {<span class="hljs-doctag">@code</span> beginIndex} is negative, or {<span class="hljs-doctag">@code</span> endIndex}
+     * is larger than the length of this sequence, or
+     * {<span class="hljs-doctag">@code</span> beginIndex} is larger than {<span class="hljs-doctag">@code</span> endIndex}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">codePointCount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> beginIndex, <span class="hljs-keyword">int</span> endIndex)</span> </span>{
+        <span class="hljs-keyword">if</span> (beginIndex &lt; <span class="hljs-number">0</span> || endIndex &gt; count || beginIndex &gt; endIndex) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IndexOutOfBoundsException();
+        }
+        <span class="hljs-keyword">return</span> Character.codePointCountImpl(value, beginIndex, endIndex-beginIndex);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the index within this sequence that is offset from the
+     * given {<span class="hljs-doctag">@code</span> index} by {<span class="hljs-doctag">@code</span> codePointOffset} code
+     * points. Unpaired surrogates within the text range given by
+     * {<span class="hljs-doctag">@code</span> index} and {<span class="hljs-doctag">@code</span> codePointOffset} count as
+     * one code point each.
+     *
+     * <span class="hljs-doctag">@param</span> index the index to be offset
+     * <span class="hljs-doctag">@param</span> codePointOffset the offset in code points
+     * <span class="hljs-doctag">@return</span> the index within this sequence
+     * <span class="hljs-doctag">@exception</span> IndexOutOfBoundsException if {<span class="hljs-doctag">@code</span> index}
+     *   is negative or larger then the length of this sequence,
+     *   or if {<span class="hljs-doctag">@code</span> codePointOffset} is positive and the subsequence
+     *   starting with {<span class="hljs-doctag">@code</span> index} has fewer than
+     *   {<span class="hljs-doctag">@code</span> codePointOffset} code points,
+     *   or if {<span class="hljs-doctag">@code</span> codePointOffset} is negative and the subsequence
+     *   before {<span class="hljs-doctag">@code</span> index} has fewer than the absolute value of
+     *   {<span class="hljs-doctag">@code</span> codePointOffset} code points.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">offsetByCodePoints</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">int</span> codePointOffset)</span> </span>{
+        <span class="hljs-keyword">if</span> (index &lt; <span class="hljs-number">0</span> || index &gt; count) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IndexOutOfBoundsException();
+        }
+        <span class="hljs-keyword">return</span> Character.offsetByCodePointsImpl(value, <span class="hljs-number">0</span>, count,
+                                                index, codePointOffset);
+    }
+
+    <span class="hljs-comment">/**
+     * Characters are copied from this sequence into the
+     * destination character array {<span class="hljs-doctag">@code</span> dst}. The first character to
+     * be copied is at index {<span class="hljs-doctag">@code</span> srcBegin}; the last character to
+     * be copied is at index {<span class="hljs-doctag">@code</span> srcEnd-1}. The total number of
+     * characters to be copied is {<span class="hljs-doctag">@code</span> srcEnd-srcBegin}. The
+     * characters are copied into the subarray of {<span class="hljs-doctag">@code</span> dst} starting
+     * at index {<span class="hljs-doctag">@code</span> dstBegin} and ending at index:
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     * dstbegin + (srcEnd-srcBegin) - 1
+     * }&lt;/pre&gt;
+     *
+     * <span class="hljs-doctag">@param</span>      srcBegin   start copying at this offset.
+     * <span class="hljs-doctag">@param</span>      srcEnd     stop copying at this offset.
+     * <span class="hljs-doctag">@param</span>      dst        the array to copy the data into.
+     * <span class="hljs-doctag">@param</span>      dstBegin   offset into {<span class="hljs-doctag">@code</span> dst}.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if any of the following is true:
+     *             &lt;ul&gt;
+     *             &lt;li&gt;{<span class="hljs-doctag">@code</span> srcBegin} is negative
+     *             &lt;li&gt;{<span class="hljs-doctag">@code</span> dstBegin} is negative
+     *             &lt;li&gt;the {<span class="hljs-doctag">@code</span> srcBegin} argument is greater than
+     *             the {<span class="hljs-doctag">@code</span> srcEnd} argument.
+     *             &lt;li&gt;{<span class="hljs-doctag">@code</span> srcEnd} is greater than
+     *             {<span class="hljs-doctag">@code</span> this.length()}.
+     *             &lt;li&gt;{<span class="hljs-doctag">@code</span> dstBegin+srcEnd-srcBegin} is greater than
+     *             {<span class="hljs-doctag">@code</span> dst.length}
+     *             &lt;/ul&gt;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">getChars</span><span class="hljs-params">(<span class="hljs-keyword">int</span> srcBegin, <span class="hljs-keyword">int</span> srcEnd, <span class="hljs-keyword">char</span>[] dst, <span class="hljs-keyword">int</span> dstBegin)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (srcBegin &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(srcBegin);
+        <span class="hljs-keyword">if</span> ((srcEnd &lt; <span class="hljs-number">0</span>) || (srcEnd &gt; count))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(srcEnd);
+        <span class="hljs-keyword">if</span> (srcBegin &gt; srcEnd)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(<span class="hljs-string">&quot;srcBegin &gt; srcEnd&quot;</span>);
+        System.arraycopy(value, srcBegin, dst, dstBegin, srcEnd - srcBegin);
+    }
+
+    <span class="hljs-comment">/**
+     * The character at the specified index is set to {<span class="hljs-doctag">@code</span> ch}. This
+     * sequence is altered to represent a new character sequence that is
+     * identical to the old character sequence, except that it contains the
+     * character {<span class="hljs-doctag">@code</span> ch} at position {<span class="hljs-doctag">@code</span> index}.
+     * &lt;p&gt;
+     * The index argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than the length of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      index   the index of the character to modify.
+     * <span class="hljs-doctag">@param</span>      ch      the new character.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> index} is
+     *             negative or greater than or equal to {<span class="hljs-doctag">@code</span> length()}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setCharAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">char</span> ch)</span> </span>{
+        <span class="hljs-keyword">if</span> ((index &lt; <span class="hljs-number">0</span>) || (index &gt;= count))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        value[index] = ch;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> Object} argument.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(Object)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   obj   an {<span class="hljs-doctag">@code</span> Object}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(Object obj)</span> </span>{
+        <span class="hljs-keyword">return</span> append(String.valueOf(obj));
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the specified string to this character sequence.
+     * &lt;p&gt;
+     * The characters of the {<span class="hljs-doctag">@code</span> String} argument are appended, in
+     * order, increasing the length of this sequence by the length of the
+     * argument. If {<span class="hljs-doctag">@code</span> str} is {<span class="hljs-doctag">@code</span> null}, then the four
+     * characters {<span class="hljs-doctag">@code</span> &quot;null&quot;} are appended.
+     * &lt;p&gt;
+     * Let &lt;i&gt;n&lt;/i&gt; be the length of this character sequence just prior to
+     * execution of the {<span class="hljs-doctag">@code</span> append} method. Then the character at
+     * index &lt;i&gt;k&lt;/i&gt; in the new character sequence is equal to the character
+     * at index &lt;i&gt;k&lt;/i&gt; in the old character sequence, if &lt;i&gt;k&lt;/i&gt; is less
+     * than &lt;i&gt;n&lt;/i&gt;; otherwise, it is equal to the character at index
+     * &lt;i&gt;k-n&lt;/i&gt; in the argument {<span class="hljs-doctag">@code</span> str}.
+     *
+     * <span class="hljs-doctag">@param</span>   str   a string.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(String str)</span> </span>{
+        <span class="hljs-keyword">if</span> (str == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> appendNull();
+        <span class="hljs-keyword">int</span> len = str.length();
+        ensureCapacityInternal(count + len);
+        str.getChars(<span class="hljs-number">0</span>, len, value, count);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">// Documentation in subclasses because of synchro difference</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(StringBuffer sb)</span> </span>{
+        <span class="hljs-keyword">if</span> (sb == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> appendNull();
+        <span class="hljs-keyword">int</span> len = sb.length();
+        ensureCapacityInternal(count + len);
+        sb.getChars(<span class="hljs-number">0</span>, len, value, count);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-function">AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(AbstractStringBuilder asb)</span> </span>{
+        <span class="hljs-keyword">if</span> (asb == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> appendNull();
+        <span class="hljs-keyword">int</span> len = asb.length();
+        ensureCapacityInternal(count + len);
+        asb.getChars(<span class="hljs-number">0</span>, len, value, count);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">// Documentation in subclasses because of synchro difference</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(CharSequence s)</span> </span>{
+        <span class="hljs-keyword">if</span> (s == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> appendNull();
+        <span class="hljs-keyword">if</span> (s <span class="hljs-keyword">instanceof</span> String)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.append((String)s);
+        <span class="hljs-keyword">if</span> (s <span class="hljs-keyword">instanceof</span> AbstractStringBuilder)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.append((AbstractStringBuilder)s);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.append(s, <span class="hljs-number">0</span>, s.length());
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> AbstractStringBuilder <span class="hljs-title">appendNull</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">int</span> c = count;
+        ensureCapacityInternal(c + <span class="hljs-number">4</span>);
+        <span class="hljs-keyword">final</span> <span class="hljs-keyword">char</span>[] value = <span class="hljs-keyword">this</span>.value;
+        value[c++] = <span class="hljs-string">&apos;n&apos;</span>;
+        value[c++] = <span class="hljs-string">&apos;u&apos;</span>;
+        value[c++] = <span class="hljs-string">&apos;l&apos;</span>;
+        value[c++] = <span class="hljs-string">&apos;l&apos;</span>;
+        count = c;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends a subsequence of the specified {<span class="hljs-doctag">@code</span> CharSequence} to this
+     * sequence.
+     * &lt;p&gt;
+     * Characters of the argument {<span class="hljs-doctag">@code</span> s}, starting at
+     * index {<span class="hljs-doctag">@code</span> start}, are appended, in order, to the contents of
+     * this sequence up to the (exclusive) index {<span class="hljs-doctag">@code</span> end}. The length
+     * of this sequence is increased by the value of {<span class="hljs-doctag">@code</span> end - start}.
+     * &lt;p&gt;
+     * Let &lt;i&gt;n&lt;/i&gt; be the length of this character sequence just prior to
+     * execution of the {<span class="hljs-doctag">@code</span> append} method. Then the character at
+     * index &lt;i&gt;k&lt;/i&gt; in this character sequence becomes equal to the
+     * character at index &lt;i&gt;k&lt;/i&gt; in this sequence, if &lt;i&gt;k&lt;/i&gt; is less than
+     * &lt;i&gt;n&lt;/i&gt;; otherwise, it is equal to the character at index
+     * &lt;i&gt;k+start-n&lt;/i&gt; in the argument {<span class="hljs-doctag">@code</span> s}.
+     * &lt;p&gt;
+     * If {<span class="hljs-doctag">@code</span> s} is {<span class="hljs-doctag">@code</span> null}, then this method appends
+     * characters as if the s parameter was a sequence containing the four
+     * characters {<span class="hljs-doctag">@code</span> &quot;null&quot;}.
+     *
+     * <span class="hljs-doctag">@param</span>   s the sequence to append.
+     * <span class="hljs-doctag">@param</span>   start   the starting index of the subsequence to be appended.
+     * <span class="hljs-doctag">@param</span>   end     the end index of the subsequence to be appended.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException if
+     *             {<span class="hljs-doctag">@code</span> start} is negative, or
+     *             {<span class="hljs-doctag">@code</span> start} is greater than {<span class="hljs-doctag">@code</span> end} or
+     *             {<span class="hljs-doctag">@code</span> end} is greater than {<span class="hljs-doctag">@code</span> s.length()}
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(CharSequence s, <span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+        <span class="hljs-keyword">if</span> (s == <span class="hljs-keyword">null</span>)
+            s = <span class="hljs-string">&quot;null&quot;</span>;
+        <span class="hljs-keyword">if</span> ((start &lt; <span class="hljs-number">0</span>) || (start &gt; end) || (end &gt; s.length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IndexOutOfBoundsException(
+                <span class="hljs-string">&quot;start &quot;</span> + start + <span class="hljs-string">&quot;, end &quot;</span> + end + <span class="hljs-string">&quot;, s.length() &quot;</span>
+                + s.length());
+        <span class="hljs-keyword">int</span> len = end - start;
+        ensureCapacityInternal(count + len);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = start, j = count; i &lt; end; i++, j++)
+            value[j] = s.charAt(i);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> char} array
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The characters of the array argument are appended, in order, to
+     * the contents of this sequence. The length of this sequence
+     * increases by the length of the argument.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(char[])},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   str   the characters to be appended.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">char</span>[] str)</span> </span>{
+        <span class="hljs-keyword">int</span> len = str.length;
+        ensureCapacityInternal(count + len);
+        System.arraycopy(str, <span class="hljs-number">0</span>, value, count, len);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of a subarray of the
+     * {<span class="hljs-doctag">@code</span> char} array argument to this sequence.
+     * &lt;p&gt;
+     * Characters of the {<span class="hljs-doctag">@code</span> char} array {<span class="hljs-doctag">@code</span> str}, starting at
+     * index {<span class="hljs-doctag">@code</span> offset}, are appended, in order, to the contents
+     * of this sequence. The length of this sequence increases
+     * by the value of {<span class="hljs-doctag">@code</span> len}.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the arguments were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(char[],int,int)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   str      the characters to be appended.
+     * <span class="hljs-doctag">@param</span>   offset   the index of the first {<span class="hljs-doctag">@code</span> char} to append.
+     * <span class="hljs-doctag">@param</span>   len      the number of {<span class="hljs-doctag">@code</span> char}s to append.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     * <span class="hljs-doctag">@throws</span> IndexOutOfBoundsException
+     *         if {<span class="hljs-doctag">@code</span> offset &lt; 0} or {<span class="hljs-doctag">@code</span> len &lt; 0}
+     *         or {<span class="hljs-doctag">@code</span> offset+len &gt; str.length}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">char</span> str[], <span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> len)</span> </span>{
+        <span class="hljs-keyword">if</span> (len &gt; <span class="hljs-number">0</span>)                <span class="hljs-comment">// let arraycopy report AIOOBE for len &lt; 0</span>
+            ensureCapacityInternal(count + len);
+        System.arraycopy(str, offset, value, count, len);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> boolean}
+     * argument to the sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(boolean)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   b   a {<span class="hljs-doctag">@code</span> boolean}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> b)</span> </span>{
+        <span class="hljs-keyword">if</span> (b) {
+            ensureCapacityInternal(count + <span class="hljs-number">4</span>);
+            value[count++] = <span class="hljs-string">&apos;t&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;r&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;u&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;e&apos;</span>;
+        } <span class="hljs-keyword">else</span> {
+            ensureCapacityInternal(count + <span class="hljs-number">5</span>);
+            value[count++] = <span class="hljs-string">&apos;f&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;a&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;l&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;s&apos;</span>;
+            value[count++] = <span class="hljs-string">&apos;e&apos;</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> char}
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The argument is appended to the contents of this sequence.
+     * The length of this sequence increases by {<span class="hljs-doctag">@code</span> 1}.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(char)},
+     * and the character in that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   c   a {<span class="hljs-doctag">@code</span> char}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">char</span> c)</span> </span>{
+        ensureCapacityInternal(count + <span class="hljs-number">1</span>);
+        value[count++] = c;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> int}
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(int)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   i   an {<span class="hljs-doctag">@code</span> int}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> </span>{
+        <span class="hljs-keyword">if</span> (i == Integer.MIN_VALUE) {
+            append(<span class="hljs-string">&quot;-2147483648&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+        }
+        <span class="hljs-keyword">int</span> appendedLength = (i &lt; <span class="hljs-number">0</span>) ? Integer.stringSize(-i) + <span class="hljs-number">1</span>
+                                     : Integer.stringSize(i);
+        <span class="hljs-keyword">int</span> spaceNeeded = count + appendedLength;
+        ensureCapacityInternal(spaceNeeded);
+        Integer.getChars(i, spaceNeeded, value);
+        count = spaceNeeded;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> long}
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(long)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   l   a {<span class="hljs-doctag">@code</span> long}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">long</span> l)</span> </span>{
+        <span class="hljs-keyword">if</span> (l == Long.MIN_VALUE) {
+            append(<span class="hljs-string">&quot;-9223372036854775808&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+        }
+        <span class="hljs-keyword">int</span> appendedLength = (l &lt; <span class="hljs-number">0</span>) ? Long.stringSize(-l) + <span class="hljs-number">1</span>
+                                     : Long.stringSize(l);
+        <span class="hljs-keyword">int</span> spaceNeeded = count + appendedLength;
+        ensureCapacityInternal(spaceNeeded);
+        Long.getChars(l, spaceNeeded, value);
+        count = spaceNeeded;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> float}
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(float)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   f   a {<span class="hljs-doctag">@code</span> float}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">float</span> f)</span> </span>{
+        FloatingDecimal.appendTo(f,<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> double}
+     * argument to this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the argument were converted
+     * to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(double)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #append(String) appended} to this character sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   d   a {<span class="hljs-doctag">@code</span> double}.
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">append</span><span class="hljs-params">(<span class="hljs-keyword">double</span> d)</span> </span>{
+        FloatingDecimal.appendTo(d,<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Removes the characters in a substring of this sequence.
+     * The substring begins at the specified {<span class="hljs-doctag">@code</span> start} and extends to
+     * the character at index {<span class="hljs-doctag">@code</span> end - 1} or to the end of the
+     * sequence if no such character exists. If
+     * {<span class="hljs-doctag">@code</span> start} is equal to {<span class="hljs-doctag">@code</span> end}, no changes are made.
+     *
+     * <span class="hljs-doctag">@param</span>      start  The beginning index, inclusive.
+     * <span class="hljs-doctag">@param</span>      end    The ending index, exclusive.
+     * <span class="hljs-doctag">@return</span>     This object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> start}
+     *             is negative, greater than {<span class="hljs-doctag">@code</span> length()}, or
+     *             greater than {<span class="hljs-doctag">@code</span> end}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+        <span class="hljs-keyword">if</span> (start &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(start);
+        <span class="hljs-keyword">if</span> (end &gt; count)
+            end = count;
+        <span class="hljs-keyword">if</span> (start &gt; end)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException();
+        <span class="hljs-keyword">int</span> len = end - start;
+        <span class="hljs-keyword">if</span> (len &gt; <span class="hljs-number">0</span>) {
+            System.arraycopy(value, start+len, value, start, count-end);
+            count -= len;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Appends the string representation of the {<span class="hljs-doctag">@code</span> codePoint}
+     * argument to this sequence.
+     *
+     * &lt;p&gt; The argument is appended to the contents of this sequence.
+     * The length of this sequence increases by
+     * {<span class="hljs-doctag">@link</span> Character#charCount(int) Character.charCount(codePoint)}.
+     *
+     * &lt;p&gt; The overall effect is exactly as if the argument were
+     * converted to a {<span class="hljs-doctag">@code</span> char} array by the method
+     * {<span class="hljs-doctag">@link</span> Character#toChars(int)} and the character in that array
+     * were then {<span class="hljs-doctag">@link</span> #append(char[]) appended} to this character
+     * sequence.
+     *
+     * <span class="hljs-doctag">@param</span>   codePoint   a Unicode code point
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     * <span class="hljs-doctag">@exception</span> IllegalArgumentException if the specified
+     * {<span class="hljs-doctag">@code</span> codePoint} isn&apos;t a valid Unicode code point
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">appendCodePoint</span><span class="hljs-params">(<span class="hljs-keyword">int</span> codePoint)</span> </span>{
+        <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> count = <span class="hljs-keyword">this</span>.count;
+
+        <span class="hljs-keyword">if</span> (Character.isBmpCodePoint(codePoint)) {
+            ensureCapacityInternal(count + <span class="hljs-number">1</span>);
+            value[count] = (<span class="hljs-keyword">char</span>) codePoint;
+            <span class="hljs-keyword">this</span>.count = count + <span class="hljs-number">1</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (Character.isValidCodePoint(codePoint)) {
+            ensureCapacityInternal(count + <span class="hljs-number">2</span>);
+            Character.toSurrogates(codePoint, value, count);
+            <span class="hljs-keyword">this</span>.count = count + <span class="hljs-number">2</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalArgumentException();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Removes the {<span class="hljs-doctag">@code</span> char} at the specified position in this
+     * sequence. This sequence is shortened by one {<span class="hljs-doctag">@code</span> char}.
+     *
+     * &lt;p&gt;Note: If the character at the given index is a supplementary
+     * character, this method does not remove the entire character. If
+     * correct handling of supplementary characters is required,
+     * determine the number of {<span class="hljs-doctag">@code</span> char}s to remove by calling
+     * {<span class="hljs-doctag">@code</span> Character.charCount(thisSequence.codePointAt(index))},
+     * where {<span class="hljs-doctag">@code</span> thisSequence} is this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>       index  Index of {<span class="hljs-doctag">@code</span> char} to remove
+     * <span class="hljs-doctag">@return</span>      This object.
+     * <span class="hljs-doctag">@throws</span>      StringIndexOutOfBoundsException  if the {<span class="hljs-doctag">@code</span> index}
+     *              is negative or greater than or equal to
+     *              {<span class="hljs-doctag">@code</span> length()}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">deleteCharAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span> ((index &lt; <span class="hljs-number">0</span>) || (index &gt;= count))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        System.arraycopy(value, index+<span class="hljs-number">1</span>, value, index, count-index-<span class="hljs-number">1</span>);
+        count--;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Replaces the characters in a substring of this sequence
+     * with characters in the specified {<span class="hljs-doctag">@code</span> String}. The substring
+     * begins at the specified {<span class="hljs-doctag">@code</span> start} and extends to the character
+     * at index {<span class="hljs-doctag">@code</span> end - 1} or to the end of the
+     * sequence if no such character exists. First the
+     * characters in the substring are removed and then the specified
+     * {<span class="hljs-doctag">@code</span> String} is inserted at {<span class="hljs-doctag">@code</span> start}. (This
+     * sequence will be lengthened to accommodate the
+     * specified String if necessary.)
+     *
+     * <span class="hljs-doctag">@param</span>      start    The beginning index, inclusive.
+     * <span class="hljs-doctag">@param</span>      end      The ending index, exclusive.
+     * <span class="hljs-doctag">@param</span>      str   String that will replace previous contents.
+     * <span class="hljs-doctag">@return</span>     This object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> start}
+     *             is negative, greater than {<span class="hljs-doctag">@code</span> length()}, or
+     *             greater than {<span class="hljs-doctag">@code</span> end}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">replace</span><span class="hljs-params">(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end, String str)</span> </span>{
+        <span class="hljs-keyword">if</span> (start &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(start);
+        <span class="hljs-keyword">if</span> (start &gt; count)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(<span class="hljs-string">&quot;start &gt; length()&quot;</span>);
+        <span class="hljs-keyword">if</span> (start &gt; end)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(<span class="hljs-string">&quot;start &gt; end&quot;</span>);
+
+        <span class="hljs-keyword">if</span> (end &gt; count)
+            end = count;
+        <span class="hljs-keyword">int</span> len = str.length();
+        <span class="hljs-keyword">int</span> newCount = count + len - (end - start);
+        ensureCapacityInternal(newCount);
+
+        System.arraycopy(value, end, value, start + len, count - end);
+        str.getChars(value, start);
+        count = newCount;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a new {<span class="hljs-doctag">@code</span> String} that contains a subsequence of
+     * characters currently contained in this character sequence. The
+     * substring begins at the specified index and extends to the end of
+     * this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      start    The beginning index, inclusive.
+     * <span class="hljs-doctag">@return</span>     The new string.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> start} is
+     *             less than zero, or greater than the length of this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">substring</span><span class="hljs-params">(<span class="hljs-keyword">int</span> start)</span> </span>{
+        <span class="hljs-keyword">return</span> substring(start, count);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a new character sequence that is a subsequence of this sequence.
+     *
+     * &lt;p&gt; An invocation of this method of the form
+     *
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     * sb.subSequence(begin,&amp;nbsp;end)}&lt;/pre&gt;
+     *
+     * behaves in exactly the same way as the invocation
+     *
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     * sb.substring(begin,&amp;nbsp;end)}&lt;/pre&gt;
+     *
+     * This method is provided so that this class can
+     * implement the {<span class="hljs-doctag">@link</span> CharSequence} interface.
+     *
+     * <span class="hljs-doctag">@param</span>      start   the start index, inclusive.
+     * <span class="hljs-doctag">@param</span>      end     the end index, exclusive.
+     * <span class="hljs-doctag">@return</span>     the specified subsequence.
+     *
+     * <span class="hljs-doctag">@throws</span>  IndexOutOfBoundsException
+     *          if {<span class="hljs-doctag">@code</span> start} or {<span class="hljs-doctag">@code</span> end} are negative,
+     *          if {<span class="hljs-doctag">@code</span> end} is greater than {<span class="hljs-doctag">@code</span> length()},
+     *          or if {<span class="hljs-doctag">@code</span> start} is greater than {<span class="hljs-doctag">@code</span> end}
+     * <span class="hljs-doctag">@spec</span> JSR-51
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> CharSequence <span class="hljs-title">subSequence</span><span class="hljs-params">(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+        <span class="hljs-keyword">return</span> substring(start, end);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a new {<span class="hljs-doctag">@code</span> String} that contains a subsequence of
+     * characters currently contained in this sequence. The
+     * substring begins at the specified {<span class="hljs-doctag">@code</span> start} and
+     * extends to the character at index {<span class="hljs-doctag">@code</span> end - 1}.
+     *
+     * <span class="hljs-doctag">@param</span>      start    The beginning index, inclusive.
+     * <span class="hljs-doctag">@param</span>      end      The ending index, exclusive.
+     * <span class="hljs-doctag">@return</span>     The new string.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> start}
+     *             or {<span class="hljs-doctag">@code</span> end} are negative or greater than
+     *             {<span class="hljs-doctag">@code</span> length()}, or {<span class="hljs-doctag">@code</span> start} is
+     *             greater than {<span class="hljs-doctag">@code</span> end}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">substring</span><span class="hljs-params">(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+        <span class="hljs-keyword">if</span> (start &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(start);
+        <span class="hljs-keyword">if</span> (end &gt; count)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(end);
+        <span class="hljs-keyword">if</span> (start &gt; end)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(end - start);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> String(value, start, end - start);
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of a subarray of the {<span class="hljs-doctag">@code</span> str}
+     * array argument into this sequence. The subarray begins at the
+     * specified {<span class="hljs-doctag">@code</span> offset} and extends {<span class="hljs-doctag">@code</span> len} {<span class="hljs-doctag">@code</span> char}s.
+     * The characters of the subarray are inserted into this sequence at
+     * the position indicated by {<span class="hljs-doctag">@code</span> index}. The length of this
+     * sequence increases by {<span class="hljs-doctag">@code</span> len} {<span class="hljs-doctag">@code</span> char}s.
+     *
+     * <span class="hljs-doctag">@param</span>      index    position at which to insert subarray.
+     * <span class="hljs-doctag">@param</span>      str       A {<span class="hljs-doctag">@code</span> char} array.
+     * <span class="hljs-doctag">@param</span>      offset   the index of the first {<span class="hljs-doctag">@code</span> char} in subarray to
+     *             be inserted.
+     * <span class="hljs-doctag">@param</span>      len      the number of {<span class="hljs-doctag">@code</span> char}s in the subarray to
+     *             be inserted.
+     * <span class="hljs-doctag">@return</span>     This object
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> index}
+     *             is negative or greater than {<span class="hljs-doctag">@code</span> length()}, or
+     *             {<span class="hljs-doctag">@code</span> offset} or {<span class="hljs-doctag">@code</span> len} are negative, or
+     *             {<span class="hljs-doctag">@code</span> (offset+len)} is greater than
+     *             {<span class="hljs-doctag">@code</span> str.length}.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">char</span>[] str, <span class="hljs-keyword">int</span> offset,
+                                        <span class="hljs-keyword">int</span> len)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> ((index &lt; <span class="hljs-number">0</span>) || (index &gt; length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(index);
+        <span class="hljs-keyword">if</span> ((offset &lt; <span class="hljs-number">0</span>) || (len &lt; <span class="hljs-number">0</span>) || (offset &gt; str.length - len))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(
+                <span class="hljs-string">&quot;offset &quot;</span> + offset + <span class="hljs-string">&quot;, len &quot;</span> + len + <span class="hljs-string">&quot;, str.length &quot;</span>
+                + str.length);
+        ensureCapacityInternal(count + len);
+        System.arraycopy(value, index, value, index + len, count - index);
+        System.arraycopy(str, offset, value, index, len);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> Object}
+     * argument into this character sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(Object)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      obj      an {<span class="hljs-doctag">@code</span> Object}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, Object obj)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(obj));
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string into this character sequence.
+     * &lt;p&gt;
+     * The characters of the {<span class="hljs-doctag">@code</span> String} argument are inserted, in
+     * order, into this sequence at the indicated offset, moving up any
+     * characters originally above that position and increasing the length
+     * of this sequence by the length of the argument. If
+     * {<span class="hljs-doctag">@code</span> str} is {<span class="hljs-doctag">@code</span> null}, then the four characters
+     * {<span class="hljs-doctag">@code</span> &quot;null&quot;} are inserted into this sequence.
+     * &lt;p&gt;
+     * The character at index &lt;i&gt;k&lt;/i&gt; in the new character sequence is
+     * equal to:
+     * &lt;ul&gt;
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt; in the old character sequence, if
+     * &lt;i&gt;k&lt;/i&gt; is less than {<span class="hljs-doctag">@code</span> offset}
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt;{<span class="hljs-doctag">@code</span> -offset} in the
+     * argument {<span class="hljs-doctag">@code</span> str}, if &lt;i&gt;k&lt;/i&gt; is not less than
+     * {<span class="hljs-doctag">@code</span> offset} but is less than {<span class="hljs-doctag">@code</span> offset+str.length()}
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt;{<span class="hljs-doctag">@code</span> -str.length()} in the
+     * old character sequence, if &lt;i&gt;k&lt;/i&gt; is not less than
+     * {<span class="hljs-doctag">@code</span> offset+str.length()}
+     * &lt;/ul&gt;&lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      str      a string.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, String str)</span> </span>{
+        <span class="hljs-keyword">if</span> ((offset &lt; <span class="hljs-number">0</span>) || (offset &gt; length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(offset);
+        <span class="hljs-keyword">if</span> (str == <span class="hljs-keyword">null</span>)
+            str = <span class="hljs-string">&quot;null&quot;</span>;
+        <span class="hljs-keyword">int</span> len = str.length();
+        ensureCapacityInternal(count + len);
+        System.arraycopy(value, offset, value, offset + len, count - offset);
+        str.getChars(value, offset);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> char} array
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The characters of the array argument are inserted into the
+     * contents of this sequence at the position indicated by
+     * {<span class="hljs-doctag">@code</span> offset}. The length of this sequence increases by
+     * the length of the argument.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(char[])},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      str      a character array.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">char</span>[] str)</span> </span>{
+        <span class="hljs-keyword">if</span> ((offset &lt; <span class="hljs-number">0</span>) || (offset &gt; length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> StringIndexOutOfBoundsException(offset);
+        <span class="hljs-keyword">int</span> len = str.length;
+        ensureCapacityInternal(count + len);
+        System.arraycopy(value, offset, value, offset + len, count - offset);
+        System.arraycopy(str, <span class="hljs-number">0</span>, value, offset, len);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the specified {<span class="hljs-doctag">@code</span> CharSequence} into this sequence.
+     * &lt;p&gt;
+     * The characters of the {<span class="hljs-doctag">@code</span> CharSequence} argument are inserted,
+     * in order, into this sequence at the indicated offset, moving up
+     * any characters originally above that position and increasing the length
+     * of this sequence by the length of the argument s.
+     * &lt;p&gt;
+     * The result of this method is exactly the same as if it were an
+     * invocation of this object&apos;s
+     * {<span class="hljs-doctag">@link</span> #insert(int,CharSequence,int,int) insert}(dstOffset, s, 0, s.length())
+     * method.
+     *
+     * &lt;p&gt;If {<span class="hljs-doctag">@code</span> s} is {<span class="hljs-doctag">@code</span> null}, then the four characters
+     * {<span class="hljs-doctag">@code</span> &quot;null&quot;} are inserted into this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      dstOffset   the offset.
+     * <span class="hljs-doctag">@param</span>      s the sequence to be inserted
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> dstOffset, CharSequence s)</span> </span>{
+        <span class="hljs-keyword">if</span> (s == <span class="hljs-keyword">null</span>)
+            s = <span class="hljs-string">&quot;null&quot;</span>;
+        <span class="hljs-keyword">if</span> (s <span class="hljs-keyword">instanceof</span> String)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.insert(dstOffset, (String)s);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.insert(dstOffset, s, <span class="hljs-number">0</span>, s.length());
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts a subsequence of the specified {<span class="hljs-doctag">@code</span> CharSequence} into
+     * this sequence.
+     * &lt;p&gt;
+     * The subsequence of the argument {<span class="hljs-doctag">@code</span> s} specified by
+     * {<span class="hljs-doctag">@code</span> start} and {<span class="hljs-doctag">@code</span> end} are inserted,
+     * in order, into this sequence at the specified destination offset, moving
+     * up any characters originally above that position. The length of this
+     * sequence is increased by {<span class="hljs-doctag">@code</span> end - start}.
+     * &lt;p&gt;
+     * The character at index &lt;i&gt;k&lt;/i&gt; in this sequence becomes equal to:
+     * &lt;ul&gt;
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt; in this sequence, if
+     * &lt;i&gt;k&lt;/i&gt; is less than {<span class="hljs-doctag">@code</span> dstOffset}
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt;{<span class="hljs-doctag">@code</span> +start-dstOffset} in
+     * the argument {<span class="hljs-doctag">@code</span> s}, if &lt;i&gt;k&lt;/i&gt; is greater than or equal to
+     * {<span class="hljs-doctag">@code</span> dstOffset} but is less than {<span class="hljs-doctag">@code</span> dstOffset+end-start}
+     * &lt;li&gt;the character at index &lt;i&gt;k&lt;/i&gt;{<span class="hljs-doctag">@code</span> -(end-start)} in this
+     * sequence, if &lt;i&gt;k&lt;/i&gt; is greater than or equal to
+     * {<span class="hljs-doctag">@code</span> dstOffset+end-start}
+     * &lt;/ul&gt;&lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> dstOffset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     * &lt;p&gt;The start argument must be nonnegative, and not greater than
+     * {<span class="hljs-doctag">@code</span> end}.
+     * &lt;p&gt;The end argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> start}, and less than or equal to the length of s.
+     *
+     * &lt;p&gt;If {<span class="hljs-doctag">@code</span> s} is {<span class="hljs-doctag">@code</span> null}, then this method inserts
+     * characters as if the s parameter was a sequence containing the four
+     * characters {<span class="hljs-doctag">@code</span> &quot;null&quot;}.
+     *
+     * <span class="hljs-doctag">@param</span>      dstOffset   the offset in this sequence.
+     * <span class="hljs-doctag">@param</span>      s       the sequence to be inserted.
+     * <span class="hljs-doctag">@param</span>      start   the starting index of the subsequence to be inserted.
+     * <span class="hljs-doctag">@param</span>      end     the end index of the subsequence to be inserted.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if {<span class="hljs-doctag">@code</span> dstOffset}
+     *             is negative or greater than {<span class="hljs-doctag">@code</span> this.length()}, or
+     *              {<span class="hljs-doctag">@code</span> start} or {<span class="hljs-doctag">@code</span> end} are negative, or
+     *              {<span class="hljs-doctag">@code</span> start} is greater than {<span class="hljs-doctag">@code</span> end} or
+     *              {<span class="hljs-doctag">@code</span> end} is greater than {<span class="hljs-doctag">@code</span> s.length()}
+     */</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> dstOffset, CharSequence s,
+                                         <span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+        <span class="hljs-keyword">if</span> (s == <span class="hljs-keyword">null</span>)
+            s = <span class="hljs-string">&quot;null&quot;</span>;
+        <span class="hljs-keyword">if</span> ((dstOffset &lt; <span class="hljs-number">0</span>) || (dstOffset &gt; <span class="hljs-keyword">this</span>.length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IndexOutOfBoundsException(<span class="hljs-string">&quot;dstOffset &quot;</span>+dstOffset);
+        <span class="hljs-keyword">if</span> ((start &lt; <span class="hljs-number">0</span>) || (end &lt; <span class="hljs-number">0</span>) || (start &gt; end) || (end &gt; s.length()))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IndexOutOfBoundsException(
+                <span class="hljs-string">&quot;start &quot;</span> + start + <span class="hljs-string">&quot;, end &quot;</span> + end + <span class="hljs-string">&quot;, s.length() &quot;</span>
+                + s.length());
+        <span class="hljs-keyword">int</span> len = end - start;
+        ensureCapacityInternal(count + len);
+        System.arraycopy(value, dstOffset, value, dstOffset + len,
+                         count - dstOffset);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=start; i&lt;end; i++)
+            value[dstOffset++] = s.charAt(i);
+        count += len;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> boolean}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(boolean)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      b        a {<span class="hljs-doctag">@code</span> boolean}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">boolean</span> b)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(b));
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> char}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(char)},
+     * and the character in that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      c        a {<span class="hljs-doctag">@code</span> char}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     IndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">char</span> c)</span> </span>{
+        ensureCapacityInternal(count + <span class="hljs-number">1</span>);
+        System.arraycopy(value, offset, value, offset + <span class="hljs-number">1</span>, count - offset);
+        value[offset] = c;
+        count += <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the second {<span class="hljs-doctag">@code</span> int}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(int)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      i        an {<span class="hljs-doctag">@code</span> int}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> i)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(i));
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> long}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(long)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      l        a {<span class="hljs-doctag">@code</span> long}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">long</span> l)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(l));
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> float}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(float)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      f        a {<span class="hljs-doctag">@code</span> float}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">float</span> f)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(f));
+    }
+
+    <span class="hljs-comment">/**
+     * Inserts the string representation of the {<span class="hljs-doctag">@code</span> double}
+     * argument into this sequence.
+     * &lt;p&gt;
+     * The overall effect is exactly as if the second argument were
+     * converted to a string by the method {<span class="hljs-doctag">@link</span> String#valueOf(double)},
+     * and the characters of that string were then
+     * {<span class="hljs-doctag">@link</span> #insert(int,String) inserted} into this character
+     * sequence at the indicated offset.
+     * &lt;p&gt;
+     * The {<span class="hljs-doctag">@code</span> offset} argument must be greater than or equal to
+     * {<span class="hljs-doctag">@code</span> 0}, and less than or equal to the {<span class="hljs-doctag">@linkplain</span> #length() length}
+     * of this sequence.
+     *
+     * <span class="hljs-doctag">@param</span>      offset   the offset.
+     * <span class="hljs-doctag">@param</span>      d        a {<span class="hljs-doctag">@code</span> double}.
+     * <span class="hljs-doctag">@return</span>     a reference to this object.
+     * <span class="hljs-doctag">@throws</span>     StringIndexOutOfBoundsException  if the offset is invalid.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">double</span> d)</span> </span>{
+        <span class="hljs-keyword">return</span> insert(offset, String.valueOf(d));
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the index within this string of the first occurrence of the
+     * specified substring. The integer returned is the smallest value
+     * &lt;i&gt;k&lt;/i&gt; such that:
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     * this.toString().startsWith(str, &lt;i&gt;k&lt;/i&gt;)
+     * }&lt;/pre&gt;
+     * is {<span class="hljs-doctag">@code</span> true}.
+     *
+     * <span class="hljs-doctag">@param</span>   str   any string.
+     * <span class="hljs-doctag">@return</span>  if the string argument occurs as a substring within this
+     *          object, then the index of the first character of the first
+     *          such substring is returned; if it does not occur as a
+     *          substring, {<span class="hljs-doctag">@code</span> -1} is returned.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">indexOf</span><span class="hljs-params">(String str)</span> </span>{
+        <span class="hljs-keyword">return</span> indexOf(str, <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the index within this string of the first occurrence of the
+     * specified substring, starting at the specified index.  The integer
+     * returned is the smallest value {<span class="hljs-doctag">@code</span> k} for which:
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     *     k &gt;= Math.min(fromIndex, this.length()) &amp;&amp;
+     *                   this.toString().startsWith(str, k)
+     * }&lt;/pre&gt;
+     * If no such value of &lt;i&gt;k&lt;/i&gt; exists, then -1 is returned.
+     *
+     * <span class="hljs-doctag">@param</span>   str         the substring for which to search.
+     * <span class="hljs-doctag">@param</span>   fromIndex   the index from which to start the search.
+     * <span class="hljs-doctag">@return</span>  the index within this string of the first occurrence of the
+     *          specified substring, starting at the specified index.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">indexOf</span><span class="hljs-params">(String str, <span class="hljs-keyword">int</span> fromIndex)</span> </span>{
+        <span class="hljs-keyword">return</span> String.indexOf(value, <span class="hljs-number">0</span>, count, str, fromIndex);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the index within this string of the rightmost occurrence
+     * of the specified substring.  The rightmost empty string &quot;&quot; is
+     * considered to occur at the index value {<span class="hljs-doctag">@code</span> this.length()}.
+     * The returned index is the largest value &lt;i&gt;k&lt;/i&gt; such that
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     * this.toString().startsWith(str, k)
+     * }&lt;/pre&gt;
+     * is true.
+     *
+     * <span class="hljs-doctag">@param</span>   str   the substring to search for.
+     * <span class="hljs-doctag">@return</span>  if the string argument occurs one or more times as a substring
+     *          within this object, then the index of the first character of
+     *          the last such substring is returned. If it does not occur as
+     *          a substring, {<span class="hljs-doctag">@code</span> -1} is returned.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">lastIndexOf</span><span class="hljs-params">(String str)</span> </span>{
+        <span class="hljs-keyword">return</span> lastIndexOf(str, count);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the index within this string of the last occurrence of the
+     * specified substring. The integer returned is the largest value &lt;i&gt;k&lt;/i&gt;
+     * such that:
+     * &lt;pre&gt;{<span class="hljs-doctag">@code</span>
+     *     k &lt;= Math.min(fromIndex, this.length()) &amp;&amp;
+     *                   this.toString().startsWith(str, k)
+     * }&lt;/pre&gt;
+     * If no such value of &lt;i&gt;k&lt;/i&gt; exists, then -1 is returned.
+     *
+     * <span class="hljs-doctag">@param</span>   str         the substring to search for.
+     * <span class="hljs-doctag">@param</span>   fromIndex   the index to start the search from.
+     * <span class="hljs-doctag">@return</span>  the index within this sequence of the last occurrence of the
+     *          specified substring.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">lastIndexOf</span><span class="hljs-params">(String str, <span class="hljs-keyword">int</span> fromIndex)</span> </span>{
+        <span class="hljs-keyword">return</span> String.lastIndexOf(value, <span class="hljs-number">0</span>, count, str, fromIndex);
+    }
+
+    <span class="hljs-comment">/**
+     * Causes this character sequence to be replaced by the reverse of
+     * the sequence. If there are any surrogate pairs included in the
+     * sequence, these are treated as single characters for the
+     * reverse operation. Thus, the order of the high-low surrogates
+     * is never reversed.
+     *
+     * Let &lt;i&gt;n&lt;/i&gt; be the character length of this character sequence
+     * (not the length in {<span class="hljs-doctag">@code</span> char} values) just prior to
+     * execution of the {<span class="hljs-doctag">@code</span> reverse} method. Then the
+     * character at index &lt;i&gt;k&lt;/i&gt; in the new character sequence is
+     * equal to the character at index &lt;i&gt;n-k-1&lt;/i&gt; in the old
+     * character sequence.
+     *
+     * &lt;p&gt;Note that the reverse operation may result in producing
+     * surrogate pairs that were unpaired low-surrogates and
+     * high-surrogates before the operation. For example, reversing
+     * &quot;\u005CuDC00\u005CuD800&quot; produces &quot;\u005CuD800\u005CuDC00&quot; which is
+     * a valid surrogate pair.
+     *
+     * <span class="hljs-doctag">@return</span>  a reference to this object.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AbstractStringBuilder <span class="hljs-title">reverse</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">boolean</span> hasSurrogates = <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">int</span> n = count - <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = (n-<span class="hljs-number">1</span>) &gt;&gt; <span class="hljs-number">1</span>; j &gt;= <span class="hljs-number">0</span>; j--) {
+            <span class="hljs-keyword">int</span> k = n - j;
+            <span class="hljs-keyword">char</span> cj = value[j];
+            <span class="hljs-keyword">char</span> ck = value[k];
+            value[j] = ck;
+            value[k] = cj;
+            <span class="hljs-keyword">if</span> (Character.isSurrogate(cj) ||
+                Character.isSurrogate(ck)) {
+                hasSurrogates = <span class="hljs-keyword">true</span>;
+            }
+        }
+        <span class="hljs-keyword">if</span> (hasSurrogates) {
+            reverseAllValidSurrogatePairs();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+    <span class="hljs-comment">/** Outlined helper method for reverse() */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">reverseAllValidSurrogatePairs</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count - <span class="hljs-number">1</span>; i++) {
+            <span class="hljs-keyword">char</span> c2 = value[i];
+            <span class="hljs-keyword">if</span> (Character.isLowSurrogate(c2)) {
+                <span class="hljs-keyword">char</span> c1 = value[i + <span class="hljs-number">1</span>];
+                <span class="hljs-keyword">if</span> (Character.isHighSurrogate(c1)) {
+                    value[i++] = c1;
+                    value[i] = c2;
+                }
+            }
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a string representing the data in this sequence.
+     * A new {<span class="hljs-doctag">@code</span> String} object is allocated and initialized to
+     * contain the character sequence currently represented by this
+     * object. This {<span class="hljs-doctag">@code</span> String} is then returned. Subsequent
+     * changes to this sequence do not affect the contents of the
+     * {<span class="hljs-doctag">@code</span> String}.
+     *
+     * <span class="hljs-doctag">@return</span>  a string representation of this sequence of characters.
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Needed by {<span class="hljs-doctag">@code</span> String} for the contentEquals method.
+     */</span>
+    <span class="hljs-keyword">final</span> <span class="hljs-keyword">char</span>[] getValue() {
+        <span class="hljs-keyword">return</span> value;
+    }
+
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="String.html" class="navigation navigation-prev " aria-label="Previous page: String">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="StringBuffer.html" class="navigation navigation-next " aria-label="Next page: StringBuffer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AbstractStringBuilder","level":"1.2.1.20","depth":3,"next":{"title":"StringBuffer","level":"1.2.1.21","depth":3,"path":"src/java/lang/StringBuffer.md","ref":"src/java/lang/StringBuffer.md","articles":[]},"previous":{"title":"String","level":"1.2.1.19","depth":3,"path":"src/java/lang/String.md","ref":"src/java/lang/String.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/java/lang/AbstractStringBuilder.md","mtime":"2019-09-12T03:17:21.035Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T03:30:06.914Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

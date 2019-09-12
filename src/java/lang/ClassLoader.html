@@ -1,0 +1,3130 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ClassLoader · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Throwable.html" />
+    
+    
+    <link rel="prev" href="Class.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../java.html">
+            
+                <a href="../../java.html">
+            
+                    
+                    java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../lang.html">
+            
+                <a href="../lang.html">
+            
+                    
+                    lang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="instrument.html">
+            
+                <a href="instrument.html">
+            
+                    
+                    instrument
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="invoke.html">
+            
+                <a href="invoke.html">
+            
+                    
+                    invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="management.html">
+            
+                <a href="management.html">
+            
+                    
+                    mangement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="ref.html">
+            
+                <a href="ref.html">
+            
+                    
+                    ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="reflect.html">
+            
+                <a href="reflect.html">
+            
+                    
+                    reflect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="Object.html">
+            
+                <a href="Object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="Number.html">
+            
+                <a href="Number.html">
+            
+                    
+                    Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="Boolean.html">
+            
+                <a href="Boolean.html">
+            
+                    
+                    Boolean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="Character.html">
+            
+                <a href="Character.html">
+            
+                    
+                    Character
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="Byte.html">
+            
+                <a href="Byte.html">
+            
+                    
+                    Byte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="Short.html">
+            
+                <a href="Short.html">
+            
+                    
+                    Short
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="Integer.html">
+            
+                <a href="Integer.html">
+            
+                    
+                    Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="Long.html">
+            
+                <a href="Long.html">
+            
+                    
+                    Long
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="Float.html">
+            
+                <a href="Float.html">
+            
+                    
+                    Float
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.16" data-path="Double.html">
+            
+                <a href="Double.html">
+            
+                    
+                    Double
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.17" data-path="Enum.html">
+            
+                <a href="Enum.html">
+            
+                    
+                    Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.18" data-path="Void.html">
+            
+                <a href="Void.html">
+            
+                    
+                    Void
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.19" data-path="String.html">
+            
+                <a href="String.html">
+            
+                    
+                    String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.20" data-path="AbstractStringBuilder.html">
+            
+                <a href="AbstractStringBuilder.html">
+            
+                    
+                    AbstractStringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.21" data-path="StringBuffer.html">
+            
+                <a href="StringBuffer.html">
+            
+                    
+                    StringBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.22" data-path="StringBuilder.html">
+            
+                <a href="StringBuilder.html">
+            
+                    
+                    StringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.23" data-path="Math.html">
+            
+                <a href="Math.html">
+            
+                    
+                    Math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.24" data-path="StrictMath.html">
+            
+                <a href="StrictMath.html">
+            
+                    
+                    StrictMath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.25" data-path="System.html">
+            
+                <a href="System.html">
+            
+                    
+                    System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.26" data-path="Process.html">
+            
+                <a href="Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.27" data-path="Thread.html">
+            
+                <a href="Thread.html">
+            
+                    
+                    Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.28" data-path="Runtime.html">
+            
+                <a href="Runtime.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.29" data-path="Compiler.html">
+            
+                <a href="Compiler.html">
+            
+                    
+                    Compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.30" data-path="Package.html">
+            
+                <a href="Package.html">
+            
+                    
+                    Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.31" data-path="Class.html">
+            
+                <a href="Class.html">
+            
+                    
+                    Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.32" data-path="ClassLoader.html">
+            
+                <a href="ClassLoader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.33" data-path="Throwable.html">
+            
+                <a href="Throwable.html">
+            
+                    
+                    Throwable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.34" data-path="Error.html">
+            
+                <a href="Error.html">
+            
+                    
+                    Error
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.35" data-path="Exception.html">
+            
+                <a href="Exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../util.html">
+            
+                <a href="../util.html">
+            
+                    
+                    util
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../math.html">
+            
+                <a href="../math.html">
+            
+                    
+                    math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../io.html">
+            
+                <a href="../io.html">
+            
+                    
+                    io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../net.html">
+            
+                <a href="../net.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../sql.html">
+            
+                <a href="../sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../time.html">
+            
+                <a href="../time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../text.html">
+            
+                <a href="../text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../beans.html">
+            
+                <a href="../beans.html">
+            
+                    
+                    beans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../rmi.html">
+            
+                <a href="../rmi.html">
+            
+                    
+                    rmi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../security.html">
+            
+                <a href="../security.html">
+            
+                    
+                    security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../applet.html">
+            
+                <a href="../applet.html">
+            
+                    
+                    applet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../awt.html">
+            
+                <a href="../awt.html">
+            
+                    
+                    awt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../javax.html">
+            
+                <a href="../../javax.html">
+            
+                    
+                    javax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >ClassLoader</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="public-abstract-class-javalangclassloader">public abstract class java.lang.ClassLoader</h1>
+<p><a href="#source-analysis">source analysis</a></p>
+<p><a href="#source-code">source code</a></p>
+<h2 id="source-analysis">source analysis</h2>
+<h2 id="source-code">source code</h2>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * Copyright (c) 2013, 2015, Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+<span class="hljs-keyword">package</span> java.lang;
+
+<span class="hljs-keyword">import</span> java.io.InputStream;
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.io.File;
+<span class="hljs-keyword">import</span> java.lang.reflect.Constructor;
+<span class="hljs-keyword">import</span> java.lang.reflect.InvocationTargetException;
+<span class="hljs-keyword">import</span> java.net.MalformedURLException;
+<span class="hljs-keyword">import</span> java.net.URL;
+<span class="hljs-keyword">import</span> java.security.AccessController;
+<span class="hljs-keyword">import</span> java.security.AccessControlContext;
+<span class="hljs-keyword">import</span> java.security.CodeSource;
+<span class="hljs-keyword">import</span> java.security.Policy;
+<span class="hljs-keyword">import</span> java.security.PrivilegedAction;
+<span class="hljs-keyword">import</span> java.security.PrivilegedActionException;
+<span class="hljs-keyword">import</span> java.security.PrivilegedExceptionAction;
+<span class="hljs-keyword">import</span> java.security.ProtectionDomain;
+<span class="hljs-keyword">import</span> java.security.cert.Certificate;
+<span class="hljs-keyword">import</span> java.util.Collections;
+<span class="hljs-keyword">import</span> java.util.Enumeration;
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.HashSet;
+<span class="hljs-keyword">import</span> java.util.Set;
+<span class="hljs-keyword">import</span> java.util.Stack;
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.Vector;
+<span class="hljs-keyword">import</span> java.util.Hashtable;
+<span class="hljs-keyword">import</span> java.util.WeakHashMap;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentHashMap;
+<span class="hljs-keyword">import</span> sun.misc.CompoundEnumeration;
+<span class="hljs-keyword">import</span> sun.misc.Resource;
+<span class="hljs-keyword">import</span> sun.misc.URLClassPath;
+<span class="hljs-keyword">import</span> sun.misc.VM;
+<span class="hljs-keyword">import</span> sun.reflect.CallerSensitive;
+<span class="hljs-keyword">import</span> sun.reflect.Reflection;
+<span class="hljs-keyword">import</span> sun.reflect.misc.ReflectUtil;
+<span class="hljs-keyword">import</span> sun.security.util.SecurityConstants;
+
+<span class="hljs-comment">/**
+ * A class loader is an object that is responsible for loading classes. The
+ * class &lt;tt&gt;ClassLoader&lt;/tt&gt; is an abstract class.  Given the &lt;a
+ * href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of a class, a class loader should attempt to
+ * locate or generate data that constitutes a definition for the class.  A
+ * typical strategy is to transform the name into a file name and then read a
+ * &quot;class file&quot; of that name from a file system.
+ *
+ * &lt;p&gt; Every {<span class="hljs-doctag">@link</span> Class &lt;tt&gt;Class&lt;/tt&gt;} object contains a {<span class="hljs-doctag">@link</span>
+ * Class#getClassLoader() reference} to the &lt;tt&gt;ClassLoader&lt;/tt&gt; that defined
+ * it.
+ *
+ * &lt;p&gt; &lt;tt&gt;Class&lt;/tt&gt; objects for array classes are not created by class
+ * loaders, but are created automatically as required by the Java runtime.
+ * The class loader for an array class, as returned by {<span class="hljs-doctag">@link</span>
+ * Class#getClassLoader()} is the same as the class loader for its element
+ * type; if the element type is a primitive type, then the array class has no
+ * class loader.
+ *
+ * &lt;p&gt; Applications implement subclasses of &lt;tt&gt;ClassLoader&lt;/tt&gt; in order to
+ * extend the manner in which the Java virtual machine dynamically loads
+ * classes.
+ *
+ * &lt;p&gt; Class loaders may typically be used by security managers to indicate
+ * security domains.
+ *
+ * &lt;p&gt; The &lt;tt&gt;ClassLoader&lt;/tt&gt; class uses a delegation model to search for
+ * classes and resources.  Each instance of &lt;tt&gt;ClassLoader&lt;/tt&gt; has an
+ * associated parent class loader.  When requested to find a class or
+ * resource, a &lt;tt&gt;ClassLoader&lt;/tt&gt; instance will delegate the search for the
+ * class or resource to its parent class loader before attempting to find the
+ * class or resource itself.  The virtual machine&apos;s built-in class loader,
+ * called the &quot;bootstrap class loader&quot;, does not itself have a parent but may
+ * serve as the parent of a &lt;tt&gt;ClassLoader&lt;/tt&gt; instance.
+ *
+ * &lt;p&gt; Class loaders that support concurrent loading of classes are known as
+ * &lt;em&gt;parallel capable&lt;/em&gt; class loaders and are required to register
+ * themselves at their class initialization time by invoking the
+ * {<span class="hljs-doctag">@link</span>
+ * #registerAsParallelCapable &lt;tt&gt;ClassLoader.registerAsParallelCapable&lt;/tt&gt;}
+ * method. Note that the &lt;tt&gt;ClassLoader&lt;/tt&gt; class is registered as parallel
+ * capable by default. However, its subclasses still need to register themselves
+ * if they are parallel capable. &lt;br&gt;
+ * In environments in which the delegation model is not strictly
+ * hierarchical, class loaders need to be parallel capable, otherwise class
+ * loading can lead to deadlocks because the loader lock is held for the
+ * duration of the class loading process (see {<span class="hljs-doctag">@link</span> #loadClass
+ * &lt;tt&gt;loadClass&lt;/tt&gt;} methods).
+ *
+ * &lt;p&gt; Normally, the Java virtual machine loads classes from the local file
+ * system in a platform-dependent manner.  For example, on UNIX systems, the
+ * virtual machine loads classes from the directory defined by the
+ * &lt;tt&gt;CLASSPATH&lt;/tt&gt; environment variable.
+ *
+ * &lt;p&gt; However, some classes may not originate from a file; they may originate
+ * from other sources, such as the network, or they could be constructed by an
+ * application.  The method {<span class="hljs-doctag">@link</span> #defineClass(String, byte[], int, int)
+ * &lt;tt&gt;defineClass&lt;/tt&gt;} converts an array of bytes into an instance of class
+ * &lt;tt&gt;Class&lt;/tt&gt;. Instances of this newly defined class can be created using
+ * {<span class="hljs-doctag">@link</span> Class#newInstance &lt;tt&gt;Class.newInstance&lt;/tt&gt;}.
+ *
+ * &lt;p&gt; The methods and constructors of objects created by a class loader may
+ * reference other classes.  To determine the class(es) referred to, the Java
+ * virtual machine invokes the {<span class="hljs-doctag">@link</span> #loadClass &lt;tt&gt;loadClass&lt;/tt&gt;} method of
+ * the class loader that originally created the class.
+ *
+ * &lt;p&gt; For example, an application could create a network class loader to
+ * download class files from a server.  Sample code might look like:
+ *
+ * &lt;blockquote&gt;&lt;pre&gt;
+ *   ClassLoader loader&amp;nbsp;= new NetworkClassLoader(host,&amp;nbsp;port);
+ *   Object main&amp;nbsp;= loader.loadClass(&quot;Main&quot;, true).newInstance();
+ *       &amp;nbsp;.&amp;nbsp;.&amp;nbsp;.
+ * &lt;/pre&gt;&lt;/blockquote&gt;
+ *
+ * &lt;p&gt; The network class loader subclass must define the methods {<span class="hljs-doctag">@link</span>
+ * #findClass &lt;tt&gt;findClass&lt;/tt&gt;} and &lt;tt&gt;loadClassData&lt;/tt&gt; to load a class
+ * from the network.  Once it has downloaded the bytes that make up the class,
+ * it should use the method {<span class="hljs-doctag">@link</span> #defineClass &lt;tt&gt;defineClass&lt;/tt&gt;} to
+ * create a class instance.  A sample implementation is:
+ *
+ * &lt;blockquote&gt;&lt;pre&gt;
+ *     class NetworkClassLoader extends ClassLoader {
+ *         String host;
+ *         int port;
+ *
+ *         public Class findClass(String name) {
+ *             byte[] b = loadClassData(name);
+ *             return defineClass(name, b, 0, b.length);
+ *         }
+ *
+ *         private byte[] loadClassData(String name) {
+ *             // load the class data from the connection
+ *             &amp;nbsp;.&amp;nbsp;.&amp;nbsp;.
+ *         }
+ *     }
+ * &lt;/pre&gt;&lt;/blockquote&gt;
+ *
+ * &lt;h3&gt; &lt;a name=&quot;name&quot;&gt;Binary names&lt;/a&gt; &lt;/h3&gt;
+ *
+ * &lt;p&gt; Any class name provided as a {<span class="hljs-doctag">@link</span> String} parameter to methods in
+ * &lt;tt&gt;ClassLoader&lt;/tt&gt; must be a binary name as defined by
+ * &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;.
+ *
+ * &lt;p&gt; Examples of valid class names include:
+ * &lt;blockquote&gt;&lt;pre&gt;
+ *   &quot;java.lang.String&quot;
+ *   &quot;javax.swing.JSpinner$DefaultEditor&quot;
+ *   &quot;java.security.KeyStore$Builder$FileBuilder$1&quot;
+ *   &quot;java.net.URLClassLoader$3$1&quot;
+ * &lt;/pre&gt;&lt;/blockquote&gt;
+ *
+ * <span class="hljs-doctag">@see</span>      #resolveClass(Class)
+ * <span class="hljs-doctag">@since</span> 1.0
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassLoader</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">registerNatives</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-keyword">static</span> {
+        registerNatives();
+    }
+
+    <span class="hljs-comment">// The parent class loader for delegation</span>
+    <span class="hljs-comment">// Note: VM hardcoded the offset of this field, thus all new fields</span>
+    <span class="hljs-comment">// must be added *after* it.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ClassLoader parent;
+
+    <span class="hljs-comment">/**
+     * Encapsulates the set of parallel capable loader types.
+     */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ParallelLoaders</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ParallelLoaders</span><span class="hljs-params">()</span> </span>{}
+
+        <span class="hljs-comment">// the set of parallel capable loader types</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Set&lt;Class&lt;? extends ClassLoader&gt;&gt; loaderTypes =
+            Collections.newSetFromMap(
+                <span class="hljs-keyword">new</span> WeakHashMap&lt;Class&lt;? extends ClassLoader&gt;, Boolean&gt;());
+        <span class="hljs-keyword">static</span> {
+            <span class="hljs-keyword">synchronized</span> (loaderTypes) { loaderTypes.add(ClassLoader.class); }
+        }
+
+        <span class="hljs-comment">/**
+         * Registers the given class loader type as parallel capabale.
+         * Returns {<span class="hljs-doctag">@code</span> true} is successfully registered; {<span class="hljs-doctag">@code</span> false} if
+         * loader&apos;s super class is not registered.
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">register</span><span class="hljs-params">(Class&lt;? extends ClassLoader&gt; c)</span> </span>{
+            <span class="hljs-keyword">synchronized</span> (loaderTypes) {
+                <span class="hljs-keyword">if</span> (loaderTypes.contains(c.getSuperclass())) {
+                    <span class="hljs-comment">// register the class loader as parallel capable</span>
+                    <span class="hljs-comment">// if and only if all of its super classes are.</span>
+                    <span class="hljs-comment">// Note: given current classloading sequence, if</span>
+                    <span class="hljs-comment">// the immediate super class is parallel capable,</span>
+                    <span class="hljs-comment">// all the super classes higher up must be too.</span>
+                    loaderTypes.add(c);
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+                }
+            }
+        }
+
+        <span class="hljs-comment">/**
+         * Returns {<span class="hljs-doctag">@code</span> true} if the given class loader type is
+         * registered as parallel capable.
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isRegistered</span><span class="hljs-params">(Class&lt;? extends ClassLoader&gt; c)</span> </span>{
+            <span class="hljs-keyword">synchronized</span> (loaderTypes) {
+                <span class="hljs-keyword">return</span> loaderTypes.contains(c);
+            }
+        }
+    }
+
+    <span class="hljs-comment">// Maps class name to the corresponding lock object when the current</span>
+    <span class="hljs-comment">// class loader is parallel capable.</span>
+    <span class="hljs-comment">// Note: VM also uses this field to decide if the current class loader</span>
+    <span class="hljs-comment">// is parallel capable and the appropriate lock object for class loading.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ConcurrentHashMap&lt;String, Object&gt; parallelLockMap;
+
+    <span class="hljs-comment">// Hashtable that maps packages to certs</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Map &lt;String, Certificate[]&gt; package2certs;
+
+    <span class="hljs-comment">// Shared among all packages with unsigned classes</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Certificate[] nocerts = <span class="hljs-keyword">new</span> Certificate[<span class="hljs-number">0</span>];
+
+    <span class="hljs-comment">// The classes loaded by this class loader. The only purpose of this table</span>
+    <span class="hljs-comment">// is to keep the classes from being GC&apos;ed until the loader is GC&apos;ed.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Vector&lt;Class&lt;?&gt;&gt; classes = <span class="hljs-keyword">new</span> Vector&lt;&gt;();
+
+    <span class="hljs-comment">// The &quot;default&quot; domain. Set as the default ProtectionDomain on newly</span>
+    <span class="hljs-comment">// created classes.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ProtectionDomain defaultDomain =
+        <span class="hljs-keyword">new</span> ProtectionDomain(<span class="hljs-keyword">new</span> CodeSource(<span class="hljs-keyword">null</span>, (Certificate[]) <span class="hljs-keyword">null</span>),
+                             <span class="hljs-keyword">null</span>, <span class="hljs-keyword">this</span>, <span class="hljs-keyword">null</span>);
+
+    <span class="hljs-comment">// The initiating protection domains for all classes loaded by this loader</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Set&lt;ProtectionDomain&gt; domains;
+
+    <span class="hljs-comment">// Invoked by the VM to record every loaded class with this loader.</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addClass</span><span class="hljs-params">(Class&lt;?&gt; c)</span> </span>{
+        classes.addElement(c);
+    }
+
+    <span class="hljs-comment">// The packages defined in this class loader.  Each package name is mapped</span>
+    <span class="hljs-comment">// to its corresponding Package object.</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;itself&quot;)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> HashMap&lt;String, Package&gt; packages = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Void <span class="hljs-title">checkCreateClassLoader</span><span class="hljs-params">()</span> </span>{
+        SecurityManager security = System.getSecurityManager();
+        <span class="hljs-keyword">if</span> (security != <span class="hljs-keyword">null</span>) {
+            security.checkCreateClassLoader();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassLoader</span><span class="hljs-params">(Void unused, ClassLoader parent)</span> </span>{
+        <span class="hljs-keyword">this</span>.parent = parent;
+        <span class="hljs-keyword">if</span> (ParallelLoaders.isRegistered(<span class="hljs-keyword">this</span>.getClass())) {
+            parallelLockMap = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+            package2certs = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+            domains =
+                Collections.synchronizedSet(<span class="hljs-keyword">new</span> HashSet&lt;ProtectionDomain&gt;());
+            assertionLock = <span class="hljs-keyword">new</span> Object();
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// no finer-grained lock; lock on the classloader instance</span>
+            parallelLockMap = <span class="hljs-keyword">null</span>;
+            package2certs = <span class="hljs-keyword">new</span> Hashtable&lt;&gt;();
+            domains = <span class="hljs-keyword">new</span> HashSet&lt;&gt;();
+            assertionLock = <span class="hljs-keyword">this</span>;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Creates a new class loader using the specified parent class loader for
+     * delegation.
+     *
+     * &lt;p&gt; If there is a security manager, its {<span class="hljs-doctag">@link</span>
+     * SecurityManager#checkCreateClassLoader()
+     * &lt;tt&gt;checkCreateClassLoader&lt;/tt&gt;} method is invoked.  This may result in
+     * a security exception.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  parent
+     *         The parent class loader
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If a security manager exists and its
+     *          &lt;tt&gt;checkCreateClassLoader&lt;/tt&gt; method doesn&apos;t allow creation
+     *          of a new class loader.
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-title">ClassLoader</span><span class="hljs-params">(ClassLoader parent)</span> </span>{
+        <span class="hljs-keyword">this</span>(checkCreateClassLoader(), parent);
+    }
+
+    <span class="hljs-comment">/**
+     * Creates a new class loader using the &lt;tt&gt;ClassLoader&lt;/tt&gt; returned by
+     * the method {<span class="hljs-doctag">@link</span> #getSystemClassLoader()
+     * &lt;tt&gt;getSystemClassLoader()&lt;/tt&gt;} as the parent class loader.
+     *
+     * &lt;p&gt; If there is a security manager, its {<span class="hljs-doctag">@link</span>
+     * SecurityManager#checkCreateClassLoader()
+     * &lt;tt&gt;checkCreateClassLoader&lt;/tt&gt;} method is invoked.  This may result in
+     * a security exception.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If a security manager exists and its
+     *          &lt;tt&gt;checkCreateClassLoader&lt;/tt&gt; method doesn&apos;t allow creation
+     *          of a new class loader.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-title">ClassLoader</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">this</span>(checkCreateClassLoader(), getSystemClassLoader());
+    }
+
+    <span class="hljs-comment">// -- Class --</span>
+
+    <span class="hljs-comment">/**
+     * Loads the class with the specified &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;.
+     * This method searches for classes in the same manner as the {<span class="hljs-doctag">@link</span>
+     * #loadClass(String, boolean)} method.  It is invoked by the Java virtual
+     * machine to resolve class references.  Invoking this method is equivalent
+     * to invoking {<span class="hljs-doctag">@link</span> #loadClass(String, boolean) &lt;tt&gt;loadClass(name,
+     * false)&lt;/tt&gt;}.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     *
+     * <span class="hljs-doctag">@return</span>  The resulting &lt;tt&gt;Class&lt;/tt&gt; object
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassNotFoundException
+     *          If the class was not found
+     */</span>
+    <span class="hljs-keyword">public</span> Class&lt;?&gt; loadClass(String name) <span class="hljs-keyword">throws</span> ClassNotFoundException {
+        <span class="hljs-keyword">return</span> loadClass(name, <span class="hljs-keyword">false</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Loads the class with the specified &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;.  The
+     * default implementation of this method searches for classes in the
+     * following order:
+     *
+     * &lt;ol&gt;
+     *
+     *   &lt;li&gt;&lt;p&gt; Invoke {<span class="hljs-doctag">@link</span> #findLoadedClass(String)} to check if the class
+     *   has already been loaded.  &lt;/p&gt;&lt;/li&gt;
+     *
+     *   &lt;li&gt;&lt;p&gt; Invoke the {<span class="hljs-doctag">@link</span> #loadClass(String) &lt;tt&gt;loadClass&lt;/tt&gt;} method
+     *   on the parent class loader.  If the parent is &lt;tt&gt;null&lt;/tt&gt; the class
+     *   loader built-in to the virtual machine is used, instead.  &lt;/p&gt;&lt;/li&gt;
+     *
+     *   &lt;li&gt;&lt;p&gt; Invoke the {<span class="hljs-doctag">@link</span> #findClass(String)} method to find the
+     *   class.  &lt;/p&gt;&lt;/li&gt;
+     *
+     * &lt;/ol&gt;
+     *
+     * &lt;p&gt; If the class was found using the above steps, and the
+     * &lt;tt&gt;resolve&lt;/tt&gt; flag is true, this method will then invoke the {<span class="hljs-doctag">@link</span>
+     * #resolveClass(Class)} method on the resulting &lt;tt&gt;Class&lt;/tt&gt; object.
+     *
+     * &lt;p&gt; Subclasses of &lt;tt&gt;ClassLoader&lt;/tt&gt; are encouraged to override {<span class="hljs-doctag">@link</span>
+     * #findClass(String)}, rather than this method.  &lt;/p&gt;
+     *
+     * &lt;p&gt; Unless overridden, this method synchronizes on the result of
+     * {<span class="hljs-doctag">@link</span> #getClassLoadingLock &lt;tt&gt;getClassLoadingLock&lt;/tt&gt;} method
+     * during the entire class loading process.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     *
+     * <span class="hljs-doctag">@param</span>  resolve
+     *         If &lt;tt&gt;true&lt;/tt&gt; then resolve the class
+     *
+     * <span class="hljs-doctag">@return</span>  The resulting &lt;tt&gt;Class&lt;/tt&gt; object
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassNotFoundException
+     *          If the class could not be found
+     */</span>
+    <span class="hljs-keyword">protected</span> Class&lt;?&gt; loadClass(String name, <span class="hljs-keyword">boolean</span> resolve)
+        <span class="hljs-keyword">throws</span> ClassNotFoundException
+    {
+        <span class="hljs-keyword">synchronized</span> (getClassLoadingLock(name)) {
+            <span class="hljs-comment">// First, check if the class has already been loaded</span>
+            Class&lt;?&gt; c = findLoadedClass(name);
+            <span class="hljs-keyword">if</span> (c == <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">long</span> t0 = System.nanoTime();
+                <span class="hljs-keyword">try</span> {
+                    <span class="hljs-keyword">if</span> (parent != <span class="hljs-keyword">null</span>) {
+                        c = parent.loadClass(name, <span class="hljs-keyword">false</span>);
+                    } <span class="hljs-keyword">else</span> {
+                        c = findBootstrapClassOrNull(name);
+                    }
+                } <span class="hljs-keyword">catch</span> (ClassNotFoundException e) {
+                    <span class="hljs-comment">// ClassNotFoundException thrown if class not found</span>
+                    <span class="hljs-comment">// from the non-null parent class loader</span>
+                }
+
+                <span class="hljs-keyword">if</span> (c == <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-comment">// If still not found, then invoke findClass in order</span>
+                    <span class="hljs-comment">// to find the class.</span>
+                    <span class="hljs-keyword">long</span> t1 = System.nanoTime();
+                    c = findClass(name);
+
+                    <span class="hljs-comment">// this is the defining class loader; record the stats</span>
+                    sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);
+                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
+                    sun.misc.PerfCounter.getFindClasses().increment();
+                }
+            }
+            <span class="hljs-keyword">if</span> (resolve) {
+                resolveClass(c);
+            }
+            <span class="hljs-keyword">return</span> c;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the lock object for class loading operations.
+     * For backward compatibility, the default implementation of this method
+     * behaves as follows. If this ClassLoader object is registered as
+     * parallel capable, the method returns a dedicated object associated
+     * with the specified class name. Otherwise, the method returns this
+     * ClassLoader object.
+     *
+     * <span class="hljs-doctag">@param</span>  className
+     *         The name of the to-be-loaded class
+     *
+     * <span class="hljs-doctag">@return</span> the lock for class loading operations
+     *
+     * <span class="hljs-doctag">@throws</span> NullPointerException
+     *         If registered as parallel capable and &lt;tt&gt;className&lt;/tt&gt; is null
+     *
+     * <span class="hljs-doctag">@see</span> #loadClass(String, boolean)
+     *
+     * <span class="hljs-doctag">@since</span>  1.7
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Object <span class="hljs-title">getClassLoadingLock</span><span class="hljs-params">(String className)</span> </span>{
+        Object lock = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">if</span> (parallelLockMap != <span class="hljs-keyword">null</span>) {
+            Object newLock = <span class="hljs-keyword">new</span> Object();
+            lock = parallelLockMap.putIfAbsent(className, newLock);
+            <span class="hljs-keyword">if</span> (lock == <span class="hljs-keyword">null</span>) {
+                lock = newLock;
+            }
+        }
+        <span class="hljs-keyword">return</span> lock;
+    }
+
+    <span class="hljs-comment">// This method is invoked by the virtual machine to load a class.</span>
+    <span class="hljs-keyword">private</span> Class&lt;?&gt; loadClassInternal(String name)
+        <span class="hljs-keyword">throws</span> ClassNotFoundException
+    {
+        <span class="hljs-comment">// For backward compatibility, explicitly lock on &apos;this&apos; when</span>
+        <span class="hljs-comment">// the current class loader is not parallel capable.</span>
+        <span class="hljs-keyword">if</span> (parallelLockMap == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">synchronized</span> (<span class="hljs-keyword">this</span>) {
+                 <span class="hljs-keyword">return</span> loadClass(name);
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> loadClass(name);
+        }
+    }
+
+    <span class="hljs-comment">// Invoked by the VM after loading class with this loader.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">checkPackageAccess</span><span class="hljs-params">(Class&lt;?&gt; cls, ProtectionDomain pd)</span> </span>{
+        <span class="hljs-keyword">final</span> SecurityManager sm = System.getSecurityManager();
+        <span class="hljs-keyword">if</span> (sm != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">if</span> (ReflectUtil.isNonPublicProxyClass(cls)) {
+                <span class="hljs-keyword">for</span> (Class&lt;?&gt; intf: cls.getInterfaces()) {
+                    checkPackageAccess(intf, pd);
+                }
+                <span class="hljs-keyword">return</span>;
+            }
+
+            <span class="hljs-keyword">final</span> String name = cls.getName();
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> i = name.lastIndexOf(<span class="hljs-string">&apos;.&apos;</span>);
+            <span class="hljs-keyword">if</span> (i != -<span class="hljs-number">1</span>) {
+                AccessController.doPrivileged(<span class="hljs-keyword">new</span> PrivilegedAction&lt;Void&gt;() {
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> Void <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                        sm.checkPackageAccess(name.substring(<span class="hljs-number">0</span>, i));
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+                    }
+                }, <span class="hljs-keyword">new</span> AccessControlContext(<span class="hljs-keyword">new</span> ProtectionDomain[] {pd}));
+            }
+        }
+        domains.add(pd);
+    }
+
+    <span class="hljs-comment">/**
+     * Finds the class with the specified &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;.
+     * This method should be overridden by class loader implementations that
+     * follow the delegation model for loading classes, and will be invoked by
+     * the {<span class="hljs-doctag">@link</span> #loadClass &lt;tt&gt;loadClass&lt;/tt&gt;} method after checking the
+     * parent class loader for the requested class.  The default implementation
+     * throws a &lt;tt&gt;ClassNotFoundException&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     *
+     * <span class="hljs-doctag">@return</span>  The resulting &lt;tt&gt;Class&lt;/tt&gt; object
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassNotFoundException
+     *          If the class could not be found
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-keyword">protected</span> Class&lt;?&gt; findClass(String name) <span class="hljs-keyword">throws</span> ClassNotFoundException {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ClassNotFoundException(name);
+    }
+
+    <span class="hljs-comment">/**
+     * Converts an array of bytes into an instance of class &lt;tt&gt;Class&lt;/tt&gt;.
+     * Before the &lt;tt&gt;Class&lt;/tt&gt; can be used it must be resolved.  This method
+     * is deprecated in favor of the version that takes a &lt;a
+     * href=&quot;#name&quot;&gt;binary name&lt;/a&gt; as its first argument, and is more secure.
+     *
+     * <span class="hljs-doctag">@param</span>  b
+     *         The bytes that make up the class data.  The bytes in positions
+     *         &lt;tt&gt;off&lt;/tt&gt; through &lt;tt&gt;off+len-1&lt;/tt&gt; should have the format
+     *         of a valid class file as defined by
+     *         &lt;cite&gt;The Java&amp;trade; Virtual Machine Specification&lt;/cite&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  off
+     *         The start offset in &lt;tt&gt;b&lt;/tt&gt; of the class data
+     *
+     * <span class="hljs-doctag">@param</span>  len
+     *         The length of the class data
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object that was created from the specified
+     *          class data
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassFormatError
+     *          If the data did not contain a valid class
+     *
+     * <span class="hljs-doctag">@throws</span>  IndexOutOfBoundsException
+     *          If either &lt;tt&gt;off&lt;/tt&gt; or &lt;tt&gt;len&lt;/tt&gt; is negative, or if
+     *          &lt;tt&gt;off+len&lt;/tt&gt; is greater than &lt;tt&gt;b.length&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If an attempt is made to add this class to a package that
+     *          contains classes that were signed by a different set of
+     *          certificates than this class, or if an attempt is made
+     *          to define a class in a package with a fully-qualified name
+     *          that starts with &quot;{<span class="hljs-doctag">@code</span> java.}&quot;.
+     *
+     * <span class="hljs-doctag">@see</span>  #loadClass(String, boolean)
+     * <span class="hljs-doctag">@see</span>  #resolveClass(Class)
+     *
+     * <span class="hljs-doctag">@deprecated</span>  Replaced by {<span class="hljs-doctag">@link</span> #defineClass(String, byte[], int, int)
+     * defineClass(String, byte[], int, int)}
+     */</span>
+    <span class="hljs-meta">@Deprecated</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; defineClass(<span class="hljs-keyword">byte</span>[] b, <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len)
+        <span class="hljs-keyword">throws</span> ClassFormatError
+    {
+        <span class="hljs-keyword">return</span> defineClass(<span class="hljs-keyword">null</span>, b, off, len, <span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Converts an array of bytes into an instance of class &lt;tt&gt;Class&lt;/tt&gt;.
+     * Before the &lt;tt&gt;Class&lt;/tt&gt; can be used it must be resolved.
+     *
+     * &lt;p&gt; This method assigns a default {<span class="hljs-doctag">@link</span> java.security.ProtectionDomain
+     * &lt;tt&gt;ProtectionDomain&lt;/tt&gt;} to the newly defined class.  The
+     * &lt;tt&gt;ProtectionDomain&lt;/tt&gt; is effectively granted the same set of
+     * permissions returned when {<span class="hljs-doctag">@link</span>
+     * java.security.Policy#getPermissions(java.security.CodeSource)
+     * &lt;tt&gt;Policy.getPolicy().getPermissions(new CodeSource(null, null))&lt;/tt&gt;}
+     * is invoked.  The default domain is created on the first invocation of
+     * {<span class="hljs-doctag">@link</span> #defineClass(String, byte[], int, int) &lt;tt&gt;defineClass&lt;/tt&gt;},
+     * and re-used on subsequent invocations.
+     *
+     * &lt;p&gt; To assign a specific &lt;tt&gt;ProtectionDomain&lt;/tt&gt; to the class, use
+     * the {<span class="hljs-doctag">@link</span> #defineClass(String, byte[], int, int,
+     * java.security.ProtectionDomain) &lt;tt&gt;defineClass&lt;/tt&gt;} method that takes a
+     * &lt;tt&gt;ProtectionDomain&lt;/tt&gt; as one of its arguments.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The expected &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class, or
+     *         &lt;tt&gt;null&lt;/tt&gt; if not known
+     *
+     * <span class="hljs-doctag">@param</span>  b
+     *         The bytes that make up the class data.  The bytes in positions
+     *         &lt;tt&gt;off&lt;/tt&gt; through &lt;tt&gt;off+len-1&lt;/tt&gt; should have the format
+     *         of a valid class file as defined by
+     *         &lt;cite&gt;The Java&amp;trade; Virtual Machine Specification&lt;/cite&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  off
+     *         The start offset in &lt;tt&gt;b&lt;/tt&gt; of the class data
+     *
+     * <span class="hljs-doctag">@param</span>  len
+     *         The length of the class data
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object that was created from the specified
+     *          class data.
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassFormatError
+     *          If the data did not contain a valid class
+     *
+     * <span class="hljs-doctag">@throws</span>  IndexOutOfBoundsException
+     *          If either &lt;tt&gt;off&lt;/tt&gt; or &lt;tt&gt;len&lt;/tt&gt; is negative, or if
+     *          &lt;tt&gt;off+len&lt;/tt&gt; is greater than &lt;tt&gt;b.length&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If an attempt is made to add this class to a package that
+     *          contains classes that were signed by a different set of
+     *          certificates than this class (which is unsigned), or if
+     *          &lt;tt&gt;name&lt;/tt&gt; begins with &quot;&lt;tt&gt;java.&lt;/tt&gt;&quot;.
+     *
+     * <span class="hljs-doctag">@see</span>  #loadClass(String, boolean)
+     * <span class="hljs-doctag">@see</span>  #resolveClass(Class)
+     * <span class="hljs-doctag">@see</span>  java.security.CodeSource
+     * <span class="hljs-doctag">@see</span>  java.security.SecureClassLoader
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; defineClass(String name, <span class="hljs-keyword">byte</span>[] b, <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len)
+        <span class="hljs-keyword">throws</span> ClassFormatError
+    {
+        <span class="hljs-keyword">return</span> defineClass(name, b, off, len, <span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-comment">/* Determine protection domain, and check that:
+        - not define java.* class,
+        - signer of this class matches signers for the rest of the classes in
+          package.
+    */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> ProtectionDomain <span class="hljs-title">preDefineClass</span><span class="hljs-params">(String name,
+                                            ProtectionDomain pd)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (!checkName(name))
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NoClassDefFoundError(<span class="hljs-string">&quot;IllegalName: &quot;</span> + name);
+
+        <span class="hljs-comment">// Note:  Checking logic in java.lang.invoke.MemberName.checkForTypeAlias</span>
+        <span class="hljs-comment">// relies on the fact that spoofing is impossible if a class has a name</span>
+        <span class="hljs-comment">// of the form &quot;java.*&quot;</span>
+        <span class="hljs-keyword">if</span> ((name != <span class="hljs-keyword">null</span>) &amp;&amp; name.startsWith(<span class="hljs-string">&quot;java.&quot;</span>)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SecurityException
+                (<span class="hljs-string">&quot;Prohibited package name: &quot;</span> +
+                 name.substring(<span class="hljs-number">0</span>, name.lastIndexOf(<span class="hljs-string">&apos;.&apos;</span>)));
+        }
+        <span class="hljs-keyword">if</span> (pd == <span class="hljs-keyword">null</span>) {
+            pd = defaultDomain;
+        }
+
+        <span class="hljs-keyword">if</span> (name != <span class="hljs-keyword">null</span>) checkCerts(name, pd.getCodeSource());
+
+        <span class="hljs-keyword">return</span> pd;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">defineClassSourceLocation</span><span class="hljs-params">(ProtectionDomain pd)</span>
+    </span>{
+        CodeSource cs = pd.getCodeSource();
+        String source = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (cs != <span class="hljs-keyword">null</span> &amp;&amp; cs.getLocation() != <span class="hljs-keyword">null</span>) {
+            source = cs.getLocation().toString();
+        }
+        <span class="hljs-keyword">return</span> source;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postDefineClass</span><span class="hljs-params">(Class&lt;?&gt; c, ProtectionDomain pd)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (pd.getCodeSource() != <span class="hljs-keyword">null</span>) {
+            Certificate certs[] = pd.getCodeSource().getCertificates();
+            <span class="hljs-keyword">if</span> (certs != <span class="hljs-keyword">null</span>)
+                setSigners(c, certs);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Converts an array of bytes into an instance of class &lt;tt&gt;Class&lt;/tt&gt;,
+     * with an optional &lt;tt&gt;ProtectionDomain&lt;/tt&gt;.  If the domain is
+     * &lt;tt&gt;null&lt;/tt&gt;, then a default domain will be assigned to the class as
+     * specified in the documentation for {<span class="hljs-doctag">@link</span> #defineClass(String, byte[],
+     * int, int)}.  Before the class can be used it must be resolved.
+     *
+     * &lt;p&gt; The first class defined in a package determines the exact set of
+     * certificates that all subsequent classes defined in that package must
+     * contain.  The set of certificates for a class is obtained from the
+     * {<span class="hljs-doctag">@link</span> java.security.CodeSource &lt;tt&gt;CodeSource&lt;/tt&gt;} within the
+     * &lt;tt&gt;ProtectionDomain&lt;/tt&gt; of the class.  Any classes added to that
+     * package must contain the same set of certificates or a
+     * &lt;tt&gt;SecurityException&lt;/tt&gt; will be thrown.  Note that if
+     * &lt;tt&gt;name&lt;/tt&gt; is &lt;tt&gt;null&lt;/tt&gt;, this check is not performed.
+     * You should always pass in the &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the
+     * class you are defining as well as the bytes.  This ensures that the
+     * class you are defining is indeed the class you think it is.
+     *
+     * &lt;p&gt; The specified &lt;tt&gt;name&lt;/tt&gt; cannot begin with &quot;&lt;tt&gt;java.&lt;/tt&gt;&quot;, since
+     * all classes in the &quot;&lt;tt&gt;java.*&lt;/tt&gt; packages can only be defined by the
+     * bootstrap class loader.  If &lt;tt&gt;name&lt;/tt&gt; is not &lt;tt&gt;null&lt;/tt&gt;, it
+     * must be equal to the &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     * specified by the byte array &quot;&lt;tt&gt;b&lt;/tt&gt;&quot;, otherwise a {<span class="hljs-doctag">@link</span>
+     * NoClassDefFoundError &lt;tt&gt;NoClassDefFoundError&lt;/tt&gt;} will be thrown. &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The expected &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class, or
+     *         &lt;tt&gt;null&lt;/tt&gt; if not known
+     *
+     * <span class="hljs-doctag">@param</span>  b
+     *         The bytes that make up the class data. The bytes in positions
+     *         &lt;tt&gt;off&lt;/tt&gt; through &lt;tt&gt;off+len-1&lt;/tt&gt; should have the format
+     *         of a valid class file as defined by
+     *         &lt;cite&gt;The Java&amp;trade; Virtual Machine Specification&lt;/cite&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  off
+     *         The start offset in &lt;tt&gt;b&lt;/tt&gt; of the class data
+     *
+     * <span class="hljs-doctag">@param</span>  len
+     *         The length of the class data
+     *
+     * <span class="hljs-doctag">@param</span>  protectionDomain
+     *         The ProtectionDomain of the class
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object created from the data,
+     *          and optional &lt;tt&gt;ProtectionDomain&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassFormatError
+     *          If the data did not contain a valid class
+     *
+     * <span class="hljs-doctag">@throws</span>  NoClassDefFoundError
+     *          If &lt;tt&gt;name&lt;/tt&gt; is not equal to the &lt;a href=&quot;#name&quot;&gt;binary
+     *          name&lt;/a&gt; of the class specified by &lt;tt&gt;b&lt;/tt&gt;
+     *
+     * <span class="hljs-doctag">@throws</span>  IndexOutOfBoundsException
+     *          If either &lt;tt&gt;off&lt;/tt&gt; or &lt;tt&gt;len&lt;/tt&gt; is negative, or if
+     *          &lt;tt&gt;off+len&lt;/tt&gt; is greater than &lt;tt&gt;b.length&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If an attempt is made to add this class to a package that
+     *          contains classes that were signed by a different set of
+     *          certificates than this class, or if &lt;tt&gt;name&lt;/tt&gt; begins with
+     *          &quot;&lt;tt&gt;java.&lt;/tt&gt;&quot;.
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; defineClass(String name, <span class="hljs-keyword">byte</span>[] b, <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len,
+                                         ProtectionDomain protectionDomain)
+        <span class="hljs-keyword">throws</span> ClassFormatError
+    {
+        protectionDomain = preDefineClass(name, protectionDomain);
+        String source = defineClassSourceLocation(protectionDomain);
+        Class&lt;?&gt; c = defineClass1(name, b, off, len, protectionDomain, source);
+        postDefineClass(c, protectionDomain);
+        <span class="hljs-keyword">return</span> c;
+    }
+
+    <span class="hljs-comment">/**
+     * Converts a {<span class="hljs-doctag">@link</span> java.nio.ByteBuffer &lt;tt&gt;ByteBuffer&lt;/tt&gt;}
+     * into an instance of class &lt;tt&gt;Class&lt;/tt&gt;,
+     * with an optional &lt;tt&gt;ProtectionDomain&lt;/tt&gt;.  If the domain is
+     * &lt;tt&gt;null&lt;/tt&gt;, then a default domain will be assigned to the class as
+     * specified in the documentation for {<span class="hljs-doctag">@link</span> #defineClass(String, byte[],
+     * int, int)}.  Before the class can be used it must be resolved.
+     *
+     * &lt;p&gt;The rules about the first class defined in a package determining the
+     * set of certificates for the package, and the restrictions on class names
+     * are identical to those specified in the documentation for {<span class="hljs-doctag">@link</span>
+     * #defineClass(String, byte[], int, int, ProtectionDomain)}.
+     *
+     * &lt;p&gt; An invocation of this method of the form
+     * &lt;i&gt;cl&lt;/i&gt;&lt;tt&gt;.defineClass(&lt;/tt&gt;&lt;i&gt;name&lt;/i&gt;&lt;tt&gt;,&lt;/tt&gt;
+     * &lt;i&gt;bBuffer&lt;/i&gt;&lt;tt&gt;,&lt;/tt&gt; &lt;i&gt;pd&lt;/i&gt;&lt;tt&gt;)&lt;/tt&gt; yields exactly the same
+     * result as the statements
+     *
+     *&lt;p&gt; &lt;tt&gt;
+     * ...&lt;br&gt;
+     * byte[] temp = new byte[bBuffer.{<span class="hljs-doctag">@link</span>
+     * java.nio.ByteBuffer#remaining remaining}()];&lt;br&gt;
+     *     bBuffer.{<span class="hljs-doctag">@link</span> java.nio.ByteBuffer#get(byte[])
+     * get}(temp);&lt;br&gt;
+     *     return {<span class="hljs-doctag">@link</span> #defineClass(String, byte[], int, int, ProtectionDomain)
+     * cl.defineClass}(name, temp, 0,
+     * temp.length, pd);&lt;br&gt;
+     * &lt;/tt&gt;&lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The expected &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;. of the class, or
+     *         &lt;tt&gt;null&lt;/tt&gt; if not known
+     *
+     * <span class="hljs-doctag">@param</span>  b
+     *         The bytes that make up the class data. The bytes from positions
+     *         &lt;tt&gt;b.position()&lt;/tt&gt; through &lt;tt&gt;b.position() + b.limit() -1
+     *         &lt;/tt&gt; should have the format of a valid class file as defined by
+     *         &lt;cite&gt;The Java&amp;trade; Virtual Machine Specification&lt;/cite&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  protectionDomain
+     *         The ProtectionDomain of the class, or &lt;tt&gt;null&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object created from the data,
+     *          and optional &lt;tt&gt;ProtectionDomain&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassFormatError
+     *          If the data did not contain a valid class.
+     *
+     * <span class="hljs-doctag">@throws</span>  NoClassDefFoundError
+     *          If &lt;tt&gt;name&lt;/tt&gt; is not equal to the &lt;a href=&quot;#name&quot;&gt;binary
+     *          name&lt;/a&gt; of the class specified by &lt;tt&gt;b&lt;/tt&gt;
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If an attempt is made to add this class to a package that
+     *          contains classes that were signed by a different set of
+     *          certificates than this class, or if &lt;tt&gt;name&lt;/tt&gt; begins with
+     *          &quot;&lt;tt&gt;java.&lt;/tt&gt;&quot;.
+     *
+     * <span class="hljs-doctag">@see</span>      #defineClass(String, byte[], int, int, ProtectionDomain)
+     *
+     * <span class="hljs-doctag">@since</span>  1.5
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; defineClass(String name, java.nio.ByteBuffer b,
+                                         ProtectionDomain protectionDomain)
+        <span class="hljs-keyword">throws</span> ClassFormatError
+    {
+        <span class="hljs-keyword">int</span> len = b.remaining();
+
+        <span class="hljs-comment">// Use byte[] if not a direct ByteBufer:</span>
+        <span class="hljs-keyword">if</span> (!b.isDirect()) {
+            <span class="hljs-keyword">if</span> (b.hasArray()) {
+                <span class="hljs-keyword">return</span> defineClass(name, b.array(),
+                                   b.position() + b.arrayOffset(), len,
+                                   protectionDomain);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-comment">// no array, or read-only array</span>
+                <span class="hljs-keyword">byte</span>[] tb = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[len];
+                b.get(tb);  <span class="hljs-comment">// get bytes out of byte buffer.</span>
+                <span class="hljs-keyword">return</span> defineClass(name, tb, <span class="hljs-number">0</span>, len, protectionDomain);
+            }
+        }
+
+        protectionDomain = preDefineClass(name, protectionDomain);
+        String source = defineClassSourceLocation(protectionDomain);
+        Class&lt;?&gt; c = defineClass2(name, b, b.position(), len, protectionDomain, source);
+        postDefineClass(c, protectionDomain);
+        <span class="hljs-keyword">return</span> c;
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> Class&lt;?&gt; defineClass0(String name, <span class="hljs-keyword">byte</span>[] b, <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len,
+                                         ProtectionDomain pd);
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> Class&lt;?&gt; defineClass1(String name, <span class="hljs-keyword">byte</span>[] b, <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len,
+                                         ProtectionDomain pd, String source);
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> Class&lt;?&gt; defineClass2(String name, java.nio.ByteBuffer b,
+                                         <span class="hljs-keyword">int</span> off, <span class="hljs-keyword">int</span> len, ProtectionDomain pd,
+                                         String source);
+
+    <span class="hljs-comment">// true if the name is null or has the potential to be a valid binary name</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">checkName</span><span class="hljs-params">(String name)</span> </span>{
+        <span class="hljs-keyword">if</span> ((name == <span class="hljs-keyword">null</span>) || (name.length() == <span class="hljs-number">0</span>))
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        <span class="hljs-keyword">if</span> ((name.indexOf(<span class="hljs-string">&apos;/&apos;</span>) != -<span class="hljs-number">1</span>)
+            || (!VM.allowArraySyntax() &amp;&amp; (name.charAt(<span class="hljs-number">0</span>) == <span class="hljs-string">&apos;[&apos;</span>)))
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">checkCerts</span><span class="hljs-params">(String name, CodeSource cs)</span> </span>{
+        <span class="hljs-keyword">int</span> i = name.lastIndexOf(<span class="hljs-string">&apos;.&apos;</span>);
+        String pname = (i == -<span class="hljs-number">1</span>) ? <span class="hljs-string">&quot;&quot;</span> : name.substring(<span class="hljs-number">0</span>, i);
+
+        Certificate[] certs = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (cs != <span class="hljs-keyword">null</span>) {
+            certs = cs.getCertificates();
+        }
+        Certificate[] pcerts = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (parallelLockMap == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">synchronized</span> (<span class="hljs-keyword">this</span>) {
+                pcerts = package2certs.get(pname);
+                <span class="hljs-keyword">if</span> (pcerts == <span class="hljs-keyword">null</span>) {
+                    package2certs.put(pname, (certs == <span class="hljs-keyword">null</span>? nocerts:certs));
+                }
+            }
+        } <span class="hljs-keyword">else</span> {
+            pcerts = ((ConcurrentHashMap&lt;String, Certificate[]&gt;)package2certs).
+                putIfAbsent(pname, (certs == <span class="hljs-keyword">null</span>? nocerts:certs));
+        }
+        <span class="hljs-keyword">if</span> (pcerts != <span class="hljs-keyword">null</span> &amp;&amp; !compareCerts(pcerts, certs)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SecurityException(<span class="hljs-string">&quot;class \&quot;&quot;</span>+ name +
+                 <span class="hljs-string">&quot;\&quot;&apos;s signer information does not match signer information of other classes in the same package&quot;</span>);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * check to make sure the certs for the new class (certs) are the same as
+     * the certs for the first class inserted in the package (pcerts)
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">compareCerts</span><span class="hljs-params">(Certificate[] pcerts,
+                                 Certificate[] certs)</span>
+    </span>{
+        <span class="hljs-comment">// certs can be null, indicating no certs.</span>
+        <span class="hljs-keyword">if</span> ((certs == <span class="hljs-keyword">null</span>) || (certs.length == <span class="hljs-number">0</span>)) {
+            <span class="hljs-keyword">return</span> pcerts.length == <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-comment">// the length must be the same at this point</span>
+        <span class="hljs-keyword">if</span> (certs.length != pcerts.length)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+        <span class="hljs-comment">// go through and make sure all the certs in one array</span>
+        <span class="hljs-comment">// are in the other and vice-versa.</span>
+        <span class="hljs-keyword">boolean</span> match;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; certs.length; i++) {
+            match = <span class="hljs-keyword">false</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; pcerts.length; j++) {
+                <span class="hljs-keyword">if</span> (certs[i].equals(pcerts[j])) {
+                    match = <span class="hljs-keyword">true</span>;
+                    <span class="hljs-keyword">break</span>;
+                }
+            }
+            <span class="hljs-keyword">if</span> (!match) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+
+        <span class="hljs-comment">// now do the same for pcerts</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; pcerts.length; i++) {
+            match = <span class="hljs-keyword">false</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; certs.length; j++) {
+                <span class="hljs-keyword">if</span> (pcerts[i].equals(certs[j])) {
+                    match = <span class="hljs-keyword">true</span>;
+                    <span class="hljs-keyword">break</span>;
+                }
+            }
+            <span class="hljs-keyword">if</span> (!match) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Links the specified class.  This (misleadingly named) method may be
+     * used by a class loader to link a class.  If the class &lt;tt&gt;c&lt;/tt&gt; has
+     * already been linked, then this method simply returns. Otherwise, the
+     * class is linked as described in the &quot;Execution&quot; chapter of
+     * &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;.
+     *
+     * <span class="hljs-doctag">@param</span>  c
+     *         The class to link
+     *
+     * <span class="hljs-doctag">@throws</span>  NullPointerException
+     *          If &lt;tt&gt;c&lt;/tt&gt; is &lt;tt&gt;null&lt;/tt&gt;.
+     *
+     * <span class="hljs-doctag">@see</span>  #defineClass(String, byte[], int, int)
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">resolveClass</span><span class="hljs-params">(Class&lt;?&gt; c)</span> </span>{
+        resolveClass0(c);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">resolveClass0</span><span class="hljs-params">(Class&lt;?&gt; c)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Finds a class with the specified &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;,
+     * loading it if necessary.
+     *
+     * &lt;p&gt; This method loads the class through the system class loader (see
+     * {<span class="hljs-doctag">@link</span> #getSystemClassLoader()}).  The &lt;tt&gt;Class&lt;/tt&gt; object returned
+     * might have more than one &lt;tt&gt;ClassLoader&lt;/tt&gt; associated with it.
+     * Subclasses of &lt;tt&gt;ClassLoader&lt;/tt&gt; need not usually invoke this method,
+     * because most class loaders need to override just {<span class="hljs-doctag">@link</span>
+     * #findClass(String)}.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object for the specified &lt;tt&gt;name&lt;/tt&gt;
+     *
+     * <span class="hljs-doctag">@throws</span>  ClassNotFoundException
+     *          If the class could not be found
+     *
+     * <span class="hljs-doctag">@see</span>  #ClassLoader(ClassLoader)
+     * <span class="hljs-doctag">@see</span>  #getParent()
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; findSystemClass(String name)
+        <span class="hljs-keyword">throws</span> ClassNotFoundException
+    {
+        ClassLoader system = getSystemClassLoader();
+        <span class="hljs-keyword">if</span> (system == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">if</span> (!checkName(name))
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ClassNotFoundException(name);
+            Class&lt;?&gt; cls = findBootstrapClass(name);
+            <span class="hljs-keyword">if</span> (cls == <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ClassNotFoundException(name);
+            }
+            <span class="hljs-keyword">return</span> cls;
+        }
+        <span class="hljs-keyword">return</span> system.loadClass(name);
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a class loaded by the bootstrap class loader;
+     * or return null if not found.
+     */</span>
+    <span class="hljs-keyword">private</span> Class&lt;?&gt; findBootstrapClassOrNull(String name)
+    {
+        <span class="hljs-keyword">if</span> (!checkName(name)) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">return</span> findBootstrapClass(name);
+    }
+
+    <span class="hljs-comment">// return null if not found</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> Class&lt;?&gt; findBootstrapClass(String name);
+
+    <span class="hljs-comment">/**
+     * Returns the class with the given &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; if this
+     * loader has been recorded by the Java virtual machine as an initiating
+     * loader of a class with that &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt;.  Otherwise
+     * &lt;tt&gt;null&lt;/tt&gt; is returned.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The &lt;a href=&quot;#name&quot;&gt;binary name&lt;/a&gt; of the class
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Class&lt;/tt&gt; object, or &lt;tt&gt;null&lt;/tt&gt; if the class has
+     *          not been loaded
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; findLoadedClass(String name) {
+        <span class="hljs-keyword">if</span> (!checkName(name))
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> findLoadedClass0(name);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; findLoadedClass0(String name);
+
+    <span class="hljs-comment">/**
+     * Sets the signers of a class.  This should be invoked after defining a
+     * class.
+     *
+     * <span class="hljs-doctag">@param</span>  c
+     *         The &lt;tt&gt;Class&lt;/tt&gt; object
+     *
+     * <span class="hljs-doctag">@param</span>  signers
+     *         The signers for the class
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSigners</span><span class="hljs-params">(Class&lt;?&gt; c, Object[] signers)</span> </span>{
+        c.setSigners(signers);
+    }
+
+
+    <span class="hljs-comment">// -- Resource --</span>
+
+    <span class="hljs-comment">/**
+     * Finds the resource with the given name.  A resource is some data
+     * (images, audio, text, etc) that can be accessed by class code in a way
+     * that is independent of the location of the code.
+     *
+     * &lt;p&gt; The name of a resource is a &apos;&lt;tt&gt;/&lt;/tt&gt;&apos;-separated path name that
+     * identifies the resource.
+     *
+     * &lt;p&gt; This method will first search the parent class loader for the
+     * resource; if the parent is &lt;tt&gt;null&lt;/tt&gt; the path of the class loader
+     * built-in to the virtual machine is searched.  That failing, this method
+     * will invoke {<span class="hljs-doctag">@link</span> #findResource(String)} to find the resource.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@apiNote</span> When overriding this method it is recommended that an
+     * implementation ensures that any delegation is consistent with the {<span class="hljs-doctag">@link</span>
+     * #getResources(java.lang.String) getResources(String)} method.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  A &lt;tt&gt;URL&lt;/tt&gt; object for reading the resource, or
+     *          &lt;tt&gt;null&lt;/tt&gt; if the resource could not be found or the invoker
+     *          doesn&apos;t have adequate  privileges to get the resource.
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> URL <span class="hljs-title">getResource</span><span class="hljs-params">(String name)</span> </span>{
+        URL url;
+        <span class="hljs-keyword">if</span> (parent != <span class="hljs-keyword">null</span>) {
+            url = parent.getResource(name);
+        } <span class="hljs-keyword">else</span> {
+            url = getBootstrapResource(name);
+        }
+        <span class="hljs-keyword">if</span> (url == <span class="hljs-keyword">null</span>) {
+            url = findResource(name);
+        }
+        <span class="hljs-keyword">return</span> url;
+    }
+
+    <span class="hljs-comment">/**
+     * Finds all the resources with the given name. A resource is some data
+     * (images, audio, text, etc) that can be accessed by class code in a way
+     * that is independent of the location of the code.
+     *
+     * &lt;p&gt;The name of a resource is a &lt;tt&gt;/&lt;/tt&gt;-separated path name that
+     * identifies the resource.
+     *
+     * &lt;p&gt; The search order is described in the documentation for {<span class="hljs-doctag">@link</span>
+     * #getResource(String)}.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@apiNote</span> When overriding this method it is recommended that an
+     * implementation ensures that any delegation is consistent with the {<span class="hljs-doctag">@link</span>
+     * #getResource(java.lang.String) getResource(String)} method. This should
+     * ensure that the first element returned by the Enumeration&apos;s
+     * {<span class="hljs-doctag">@code</span> nextElement} method is the same resource that the
+     * {<span class="hljs-doctag">@code</span> getResource(String)} method would return.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  An enumeration of {<span class="hljs-doctag">@link</span> java.net.URL &lt;tt&gt;URL&lt;/tt&gt;} objects for
+     *          the resource.  If no resources could  be found, the enumeration
+     *          will be empty.  Resources that the class loader doesn&apos;t have
+     *          access to will not be in the enumeration.
+     *
+     * <span class="hljs-doctag">@throws</span>  IOException
+     *          If I/O errors occur
+     *
+     * <span class="hljs-doctag">@see</span>  #findResources(String)
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Enumeration&lt;URL&gt; <span class="hljs-title">getResources</span><span class="hljs-params">(String name)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)
+        Enumeration&lt;URL&gt;[] tmp = (Enumeration&lt;URL&gt;[]) <span class="hljs-keyword">new</span> Enumeration&lt;?&gt;[<span class="hljs-number">2</span>];
+        <span class="hljs-keyword">if</span> (parent != <span class="hljs-keyword">null</span>) {
+            tmp[<span class="hljs-number">0</span>] = parent.getResources(name);
+        } <span class="hljs-keyword">else</span> {
+            tmp[<span class="hljs-number">0</span>] = getBootstrapResources(name);
+        }
+        tmp[<span class="hljs-number">1</span>] = findResources(name);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> CompoundEnumeration&lt;&gt;(tmp);
+    }
+
+    <span class="hljs-comment">/**
+     * Finds the resource with the given name. Class loader implementations
+     * should override this method to specify where to find resources.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  A &lt;tt&gt;URL&lt;/tt&gt; object for reading the resource, or
+     *          &lt;tt&gt;null&lt;/tt&gt; if the resource could not be found
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> URL <span class="hljs-title">findResource</span><span class="hljs-params">(String name)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns an enumeration of {<span class="hljs-doctag">@link</span> java.net.URL &lt;tt&gt;URL&lt;/tt&gt;} objects
+     * representing all the resources with the given name. Class loader
+     * implementations should override this method to specify where to load
+     * resources from.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  An enumeration of {<span class="hljs-doctag">@link</span> java.net.URL &lt;tt&gt;URL&lt;/tt&gt;} objects for
+     *          the resources
+     *
+     * <span class="hljs-doctag">@throws</span>  IOException
+     *          If I/O errors occur
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Enumeration&lt;URL&gt; <span class="hljs-title">findResources</span><span class="hljs-params">(String name)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-keyword">return</span> java.util.Collections.emptyEnumeration();
+    }
+
+    <span class="hljs-comment">/**
+     * Registers the caller as parallel capable.
+     * The registration succeeds if and only if all of the following
+     * conditions are met:
+     * &lt;ol&gt;
+     * &lt;li&gt; no instance of the caller has been created&lt;/li&gt;
+     * &lt;li&gt; all of the super classes (except class Object) of the caller are
+     * registered as parallel capable&lt;/li&gt;
+     * &lt;/ol&gt;
+     * &lt;p&gt;Note that once a class loader is registered as parallel capable, there
+     * is no way to change it back.&lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@return</span>  true if the caller is successfully registered as
+     *          parallel capable and false if otherwise.
+     *
+     * <span class="hljs-doctag">@since</span>   1.7
+     */</span>
+    <span class="hljs-meta">@CallerSensitive</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">registerAsParallelCapable</span><span class="hljs-params">()</span> </span>{
+        Class&lt;? extends ClassLoader&gt; callerClass =
+            Reflection.getCallerClass().asSubclass(ClassLoader.class);
+        <span class="hljs-keyword">return</span> ParallelLoaders.register(callerClass);
+    }
+
+    <span class="hljs-comment">/**
+     * Find a resource of the specified name from the search path used to load
+     * classes.  This method locates the resource through the system class
+     * loader (see {<span class="hljs-doctag">@link</span> #getSystemClassLoader()}).
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  A {<span class="hljs-doctag">@link</span> java.net.URL &lt;tt&gt;URL&lt;/tt&gt;} object for reading the
+     *          resource, or &lt;tt&gt;null&lt;/tt&gt; if the resource could not be found
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> URL <span class="hljs-title">getSystemResource</span><span class="hljs-params">(String name)</span> </span>{
+        ClassLoader system = getSystemClassLoader();
+        <span class="hljs-keyword">if</span> (system == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> getBootstrapResource(name);
+        }
+        <span class="hljs-keyword">return</span> system.getResource(name);
+    }
+
+    <span class="hljs-comment">/**
+     * Finds all resources of the specified name from the search path used to
+     * load classes.  The resources thus found are returned as an
+     * {<span class="hljs-doctag">@link</span> java.util.Enumeration &lt;tt&gt;Enumeration&lt;/tt&gt;} of {<span class="hljs-doctag">@link</span>
+     * java.net.URL &lt;tt&gt;URL&lt;/tt&gt;} objects.
+     *
+     * &lt;p&gt; The search order is described in the documentation for {<span class="hljs-doctag">@link</span>
+     * #getSystemResource(String)}.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  An enumeration of resource {<span class="hljs-doctag">@link</span> java.net.URL &lt;tt&gt;URL&lt;/tt&gt;}
+     *          objects
+     *
+     * <span class="hljs-doctag">@throws</span>  IOException
+     *          If I/O errors occur
+
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Enumeration&lt;URL&gt; <span class="hljs-title">getSystemResources</span><span class="hljs-params">(String name)</span>
+        <span class="hljs-keyword">throws</span> IOException
+    </span>{
+        ClassLoader system = getSystemClassLoader();
+        <span class="hljs-keyword">if</span> (system == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> getBootstrapResources(name);
+        }
+        <span class="hljs-keyword">return</span> system.getResources(name);
+    }
+
+    <span class="hljs-comment">/**
+     * Find resources from the VM&apos;s built-in classloader.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> URL <span class="hljs-title">getBootstrapResource</span><span class="hljs-params">(String name)</span> </span>{
+        URLClassPath ucp = getBootstrapClassPath();
+        Resource res = ucp.getResource(name);
+        <span class="hljs-keyword">return</span> res != <span class="hljs-keyword">null</span> ? res.getURL() : <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Find resources from the VM&apos;s built-in classloader.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Enumeration&lt;URL&gt; <span class="hljs-title">getBootstrapResources</span><span class="hljs-params">(String name)</span>
+        <span class="hljs-keyword">throws</span> IOException
+    </span>{
+        <span class="hljs-keyword">final</span> Enumeration&lt;Resource&gt; e =
+            getBootstrapClassPath().getResources(name);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Enumeration&lt;URL&gt; () {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> URL <span class="hljs-title">nextElement</span><span class="hljs-params">()</span> </span>{
+                <span class="hljs-keyword">return</span> e.nextElement().getURL();
+            }
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">hasMoreElements</span><span class="hljs-params">()</span> </span>{
+                <span class="hljs-keyword">return</span> e.hasMoreElements();
+            }
+        };
+    }
+
+    <span class="hljs-comment">// Returns the URLClassPath that is used for finding system resources.</span>
+    <span class="hljs-function"><span class="hljs-keyword">static</span> URLClassPath <span class="hljs-title">getBootstrapClassPath</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> sun.misc.Launcher.getBootstrapClassPath();
+    }
+
+
+    <span class="hljs-comment">/**
+     * Returns an input stream for reading the specified resource.
+     *
+     * &lt;p&gt; The search order is described in the documentation for {<span class="hljs-doctag">@link</span>
+     * #getResource(String)}.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  An input stream for reading the resource, or &lt;tt&gt;null&lt;/tt&gt;
+     *          if the resource could not be found
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> InputStream <span class="hljs-title">getResourceAsStream</span><span class="hljs-params">(String name)</span> </span>{
+        URL url = getResource(name);
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> url != <span class="hljs-keyword">null</span> ? url.openStream() : <span class="hljs-keyword">null</span>;
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Open for reading, a resource of the specified name from the search path
+     * used to load classes.  This method locates the resource through the
+     * system class loader (see {<span class="hljs-doctag">@link</span> #getSystemClassLoader()}).
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The resource name
+     *
+     * <span class="hljs-doctag">@return</span>  An input stream for reading the resource, or &lt;tt&gt;null&lt;/tt&gt;
+     *          if the resource could not be found
+     *
+     * <span class="hljs-doctag">@since</span>  1.1
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> InputStream <span class="hljs-title">getSystemResourceAsStream</span><span class="hljs-params">(String name)</span> </span>{
+        URL url = getSystemResource(name);
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> url != <span class="hljs-keyword">null</span> ? url.openStream() : <span class="hljs-keyword">null</span>;
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+    }
+
+
+    <span class="hljs-comment">// -- Hierarchy --</span>
+
+    <span class="hljs-comment">/**
+     * Returns the parent class loader for delegation. Some implementations may
+     * use &lt;tt&gt;null&lt;/tt&gt; to represent the bootstrap class loader. This method
+     * will return &lt;tt&gt;null&lt;/tt&gt; in such implementations if this class loader&apos;s
+     * parent is the bootstrap class loader.
+     *
+     * &lt;p&gt; If a security manager is present, and the invoker&apos;s class loader is
+     * not &lt;tt&gt;null&lt;/tt&gt; and is not an ancestor of this class loader, then this
+     * method invokes the security manager&apos;s {<span class="hljs-doctag">@link</span>
+     * SecurityManager#checkPermission(java.security.Permission)
+     * &lt;tt&gt;checkPermission&lt;/tt&gt;} method with a {<span class="hljs-doctag">@link</span>
+     * RuntimePermission#RuntimePermission(String)
+     * &lt;tt&gt;RuntimePermission(&quot;getClassLoader&quot;)&lt;/tt&gt;} permission to verify
+     * access to the parent class loader is permitted.  If not, a
+     * &lt;tt&gt;SecurityException&lt;/tt&gt; will be thrown.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@return</span>  The parent &lt;tt&gt;ClassLoader&lt;/tt&gt;
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If a security manager exists and its &lt;tt&gt;checkPermission&lt;/tt&gt;
+     *          method doesn&apos;t allow access to this class loader&apos;s parent class
+     *          loader.
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-meta">@CallerSensitive</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> ClassLoader <span class="hljs-title">getParent</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (parent == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        SecurityManager sm = System.getSecurityManager();
+        <span class="hljs-keyword">if</span> (sm != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// Check access to the parent class loader</span>
+            <span class="hljs-comment">// If the caller&apos;s class loader is same as this class loader,</span>
+            <span class="hljs-comment">// permission check is performed.</span>
+            checkClassLoaderPermission(parent, Reflection.getCallerClass());
+        }
+        <span class="hljs-keyword">return</span> parent;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the system class loader for delegation.  This is the default
+     * delegation parent for new &lt;tt&gt;ClassLoader&lt;/tt&gt; instances, and is
+     * typically the class loader used to start the application.
+     *
+     * &lt;p&gt; This method is first invoked early in the runtime&apos;s startup
+     * sequence, at which point it creates the system class loader and sets it
+     * as the context class loader of the invoking &lt;tt&gt;Thread&lt;/tt&gt;.
+     *
+     * &lt;p&gt; The default system class loader is an implementation-dependent
+     * instance of this class.
+     *
+     * &lt;p&gt; If the system property &quot;&lt;tt&gt;java.system.class.loader&lt;/tt&gt;&quot; is defined
+     * when this method is first invoked then the value of that property is
+     * taken to be the name of a class that will be returned as the system
+     * class loader.  The class is loaded using the default system class loader
+     * and must define a public constructor that takes a single parameter of
+     * type &lt;tt&gt;ClassLoader&lt;/tt&gt; which is used as the delegation parent.  An
+     * instance is then created using this constructor with the default system
+     * class loader as the parameter.  The resulting class loader is defined
+     * to be the system class loader.
+     *
+     * &lt;p&gt; If a security manager is present, and the invoker&apos;s class loader is
+     * not &lt;tt&gt;null&lt;/tt&gt; and the invoker&apos;s class loader is not the same as or
+     * an ancestor of the system class loader, then this method invokes the
+     * security manager&apos;s {<span class="hljs-doctag">@link</span>
+     * SecurityManager#checkPermission(java.security.Permission)
+     * &lt;tt&gt;checkPermission&lt;/tt&gt;} method with a {<span class="hljs-doctag">@link</span>
+     * RuntimePermission#RuntimePermission(String)
+     * &lt;tt&gt;RuntimePermission(&quot;getClassLoader&quot;)&lt;/tt&gt;} permission to verify
+     * access to the system class loader.  If not, a
+     * &lt;tt&gt;SecurityException&lt;/tt&gt; will be thrown.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@return</span>  The system &lt;tt&gt;ClassLoader&lt;/tt&gt; for delegation, or
+     *          &lt;tt&gt;null&lt;/tt&gt; if none
+     *
+     * <span class="hljs-doctag">@throws</span>  SecurityException
+     *          If a security manager exists and its &lt;tt&gt;checkPermission&lt;/tt&gt;
+     *          method doesn&apos;t allow access to the system class loader.
+     *
+     * <span class="hljs-doctag">@throws</span>  IllegalStateException
+     *          If invoked recursively during the construction of the class
+     *          loader specified by the &quot;&lt;tt&gt;java.system.class.loader&lt;/tt&gt;&quot;
+     *          property.
+     *
+     * <span class="hljs-doctag">@throws</span>  Error
+     *          If the system property &quot;&lt;tt&gt;java.system.class.loader&lt;/tt&gt;&quot;
+     *          is defined but the named class could not be loaded, the
+     *          provider class does not define the required constructor, or an
+     *          exception is thrown by that constructor when it is invoked. The
+     *          underlying cause of the error can be retrieved via the
+     *          {<span class="hljs-doctag">@link</span> Throwable#getCause()} method.
+     *
+     * <span class="hljs-doctag">@revised</span>  1.4
+     */</span>
+    <span class="hljs-meta">@CallerSensitive</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> ClassLoader <span class="hljs-title">getSystemClassLoader</span><span class="hljs-params">()</span> </span>{
+        initSystemClassLoader();
+        <span class="hljs-keyword">if</span> (scl == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+        SecurityManager sm = System.getSecurityManager();
+        <span class="hljs-keyword">if</span> (sm != <span class="hljs-keyword">null</span>) {
+            checkClassLoaderPermission(scl, Reflection.getCallerClass());
+        }
+        <span class="hljs-keyword">return</span> scl;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">synchronized</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initSystemClassLoader</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (!sclSet) {
+            <span class="hljs-keyword">if</span> (scl != <span class="hljs-keyword">null</span>)
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(<span class="hljs-string">&quot;recursive invocation&quot;</span>);
+            sun.misc.Launcher l = sun.misc.Launcher.getLauncher();
+            <span class="hljs-keyword">if</span> (l != <span class="hljs-keyword">null</span>) {
+                Throwable oops = <span class="hljs-keyword">null</span>;
+                scl = l.getClassLoader();
+                <span class="hljs-keyword">try</span> {
+                    scl = AccessController.doPrivileged(
+                        <span class="hljs-keyword">new</span> SystemClassLoaderAction(scl));
+                } <span class="hljs-keyword">catch</span> (PrivilegedActionException pae) {
+                    oops = pae.getCause();
+                    <span class="hljs-keyword">if</span> (oops <span class="hljs-keyword">instanceof</span> InvocationTargetException) {
+                        oops = oops.getCause();
+                    }
+                }
+                <span class="hljs-keyword">if</span> (oops != <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">if</span> (oops <span class="hljs-keyword">instanceof</span> Error) {
+                        <span class="hljs-keyword">throw</span> (Error) oops;
+                    } <span class="hljs-keyword">else</span> {
+                        <span class="hljs-comment">// wrap the exception</span>
+                        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(oops);
+                    }
+                }
+            }
+            sclSet = <span class="hljs-keyword">true</span>;
+        }
+    }
+
+    <span class="hljs-comment">// Returns true if the specified class loader can be found in this class</span>
+    <span class="hljs-comment">// loader&apos;s delegation chain.</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isAncestor</span><span class="hljs-params">(ClassLoader cl)</span> </span>{
+        ClassLoader acl = <span class="hljs-keyword">this</span>;
+        do {
+            acl = acl.parent;
+            <span class="hljs-keyword">if</span> (cl == acl) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+        } <span class="hljs-keyword">while</span> (acl != <span class="hljs-keyword">null</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-comment">// Tests if class loader access requires &quot;getClassLoader&quot; permission</span>
+    <span class="hljs-comment">// check.  A class loader &apos;from&apos; can access class loader &apos;to&apos; if</span>
+    <span class="hljs-comment">// class loader &apos;from&apos; is same as class loader &apos;to&apos; or an ancestor</span>
+    <span class="hljs-comment">// of &apos;to&apos;.  The class loader in a system domain can access</span>
+    <span class="hljs-comment">// any class loader.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">needsClassLoaderPermissionCheck</span><span class="hljs-params">(ClassLoader from,
+                                                           ClassLoader to)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (from == to)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+        <span class="hljs-keyword">if</span> (from == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+        <span class="hljs-keyword">return</span> !to.isAncestor(from);
+    }
+
+    <span class="hljs-comment">// Returns the class&apos;s class loader, or null if none.</span>
+    <span class="hljs-function"><span class="hljs-keyword">static</span> ClassLoader <span class="hljs-title">getClassLoader</span><span class="hljs-params">(Class&lt;?&gt; caller)</span> </span>{
+        <span class="hljs-comment">// This can be null if the VM is requesting it</span>
+        <span class="hljs-keyword">if</span> (caller == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-comment">// Circumvent security check since this is package-private</span>
+        <span class="hljs-keyword">return</span> caller.getClassLoader0();
+    }
+
+    <span class="hljs-comment">/*
+     * Checks RuntimePermission(&quot;getClassLoader&quot;) permission
+     * if caller&apos;s class loader is not null and caller&apos;s class loader
+     * is not the same as or an ancestor of the given cl argument.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">checkClassLoaderPermission</span><span class="hljs-params">(ClassLoader cl, Class&lt;?&gt; caller)</span> </span>{
+        SecurityManager sm = System.getSecurityManager();
+        <span class="hljs-keyword">if</span> (sm != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// caller can be null if the VM is requesting it</span>
+            ClassLoader ccl = getClassLoader(caller);
+            <span class="hljs-keyword">if</span> (needsClassLoaderPermissionCheck(ccl, cl)) {
+                sm.checkPermission(SecurityConstants.GET_CLASSLOADER_PERMISSION);
+            }
+        }
+    }
+
+    <span class="hljs-comment">// The class loader for the system</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;ClassLoader.class&quot;)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassLoader scl;
+
+    <span class="hljs-comment">// Set to true once the system class loader has been set</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;ClassLoader.class&quot;)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> sclSet;
+
+
+    <span class="hljs-comment">// -- Package --</span>
+
+    <span class="hljs-comment">/**
+     * Defines a package by name in this &lt;tt&gt;ClassLoader&lt;/tt&gt;.  This allows
+     * class loaders to define the packages for their classes. Packages must
+     * be created before the class is defined, and package names must be
+     * unique within a class loader and cannot be redefined or changed once
+     * created.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The package name
+     *
+     * <span class="hljs-doctag">@param</span>  specTitle
+     *         The specification title
+     *
+     * <span class="hljs-doctag">@param</span>  specVersion
+     *         The specification version
+     *
+     * <span class="hljs-doctag">@param</span>  specVendor
+     *         The specification vendor
+     *
+     * <span class="hljs-doctag">@param</span>  implTitle
+     *         The implementation title
+     *
+     * <span class="hljs-doctag">@param</span>  implVersion
+     *         The implementation version
+     *
+     * <span class="hljs-doctag">@param</span>  implVendor
+     *         The implementation vendor
+     *
+     * <span class="hljs-doctag">@param</span>  sealBase
+     *         If not &lt;tt&gt;null&lt;/tt&gt;, then this package is sealed with
+     *         respect to the given code source {<span class="hljs-doctag">@link</span> java.net.URL
+     *         &lt;tt&gt;URL&lt;/tt&gt;}  object.  Otherwise, the package is not sealed.
+     *
+     * <span class="hljs-doctag">@return</span>  The newly defined &lt;tt&gt;Package&lt;/tt&gt; object
+     *
+     * <span class="hljs-doctag">@throws</span>  IllegalArgumentException
+     *          If package name duplicates an existing package either in this
+     *          class loader or one of its ancestors
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Package <span class="hljs-title">definePackage</span><span class="hljs-params">(String name, String specTitle,
+                                    String specVersion, String specVendor,
+                                    String implTitle, String implVersion,
+                                    String implVendor, URL sealBase)</span>
+        <span class="hljs-keyword">throws</span> IllegalArgumentException
+    </span>{
+        <span class="hljs-keyword">synchronized</span> (packages) {
+            Package pkg = getPackage(name);
+            <span class="hljs-keyword">if</span> (pkg != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalArgumentException(name);
+            }
+            pkg = <span class="hljs-keyword">new</span> Package(name, specTitle, specVersion, specVendor,
+                              implTitle, implVersion, implVendor,
+                              sealBase, <span class="hljs-keyword">this</span>);
+            packages.put(name, pkg);
+            <span class="hljs-keyword">return</span> pkg;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a &lt;tt&gt;Package&lt;/tt&gt; that has been defined by this class loader
+     * or any of its ancestors.
+     *
+     * <span class="hljs-doctag">@param</span>  name
+     *         The package name
+     *
+     * <span class="hljs-doctag">@return</span>  The &lt;tt&gt;Package&lt;/tt&gt; corresponding to the given name, or
+     *          &lt;tt&gt;null&lt;/tt&gt; if not found
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Package <span class="hljs-title">getPackage</span><span class="hljs-params">(String name)</span> </span>{
+        Package pkg;
+        <span class="hljs-keyword">synchronized</span> (packages) {
+            pkg = packages.get(name);
+        }
+        <span class="hljs-keyword">if</span> (pkg == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">if</span> (parent != <span class="hljs-keyword">null</span>) {
+                pkg = parent.getPackage(name);
+            } <span class="hljs-keyword">else</span> {
+                pkg = Package.getSystemPackage(name);
+            }
+            <span class="hljs-keyword">if</span> (pkg != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">synchronized</span> (packages) {
+                    Package pkg2 = packages.get(name);
+                    <span class="hljs-keyword">if</span> (pkg2 == <span class="hljs-keyword">null</span>) {
+                        packages.put(name, pkg);
+                    } <span class="hljs-keyword">else</span> {
+                        pkg = pkg2;
+                    }
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> pkg;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns all of the &lt;tt&gt;Packages&lt;/tt&gt; defined by this class loader and
+     * its ancestors.
+     *
+     * <span class="hljs-doctag">@return</span>  The array of &lt;tt&gt;Package&lt;/tt&gt; objects defined by this
+     *          &lt;tt&gt;ClassLoader&lt;/tt&gt;
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-keyword">protected</span> Package[] getPackages() {
+        Map&lt;String, Package&gt; map;
+        <span class="hljs-keyword">synchronized</span> (packages) {
+            map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;(packages);
+        }
+        Package[] pkgs;
+        <span class="hljs-keyword">if</span> (parent != <span class="hljs-keyword">null</span>) {
+            pkgs = parent.getPackages();
+        } <span class="hljs-keyword">else</span> {
+            pkgs = Package.getSystemPackages();
+        }
+        <span class="hljs-keyword">if</span> (pkgs != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; pkgs.length; i++) {
+                String pkgName = pkgs[i].getName();
+                <span class="hljs-keyword">if</span> (map.get(pkgName) == <span class="hljs-keyword">null</span>) {
+                    map.put(pkgName, pkgs[i]);
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> map.values().toArray(<span class="hljs-keyword">new</span> Package[map.size()]);
+    }
+
+
+    <span class="hljs-comment">// -- Native library access --</span>
+
+    <span class="hljs-comment">/**
+     * Returns the absolute path name of a native library.  The VM invokes this
+     * method to locate the native libraries that belong to classes loaded with
+     * this class loader. If this method returns &lt;tt&gt;null&lt;/tt&gt;, the VM
+     * searches the library along the path specified as the
+     * &quot;&lt;tt&gt;java.library.path&lt;/tt&gt;&quot; property.
+     *
+     * <span class="hljs-doctag">@param</span>  libname
+     *         The library name
+     *
+     * <span class="hljs-doctag">@return</span>  The absolute path of the native library
+     *
+     * <span class="hljs-doctag">@see</span>  System#loadLibrary(String)
+     * <span class="hljs-doctag">@see</span>  System#mapLibraryName(String)
+     *
+     * <span class="hljs-doctag">@since</span>  1.2
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> String <span class="hljs-title">findLibrary</span><span class="hljs-params">(String libname)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * The inner class NativeLibrary denotes a loaded native library instance.
+     * Every classloader contains a vector of loaded native libraries in the
+     * private field &lt;tt&gt;nativeLibraries&lt;/tt&gt;.  The native libraries loaded
+     * into the system are entered into the &lt;tt&gt;systemNativeLibraries&lt;/tt&gt;
+     * vector.
+     *
+     * &lt;p&gt; Every native library requires a particular version of JNI. This is
+     * denoted by the private &lt;tt&gt;jniVersion&lt;/tt&gt; field.  This field is set by
+     * the VM when it loads the library, and used by the VM to pass the correct
+     * version of JNI to the native methods.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@see</span>      ClassLoader
+     * <span class="hljs-doctag">@since</span>    1.2
+     */</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NativeLibrary</span> </span>{
+        <span class="hljs-comment">// opaque handle to native library, used in native code.</span>
+        <span class="hljs-keyword">long</span> handle;
+        <span class="hljs-comment">// the version of JNI environment the native library requires.</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> jniVersion;
+        <span class="hljs-comment">// the class from which the library is loaded, also indicates</span>
+        <span class="hljs-comment">// the loader this native library belongs.</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Class&lt;?&gt; fromClass;
+        <span class="hljs-comment">// the canonicalized name of the native library.</span>
+        <span class="hljs-comment">// or static library name</span>
+        String name;
+        <span class="hljs-comment">// Indicates if the native library is linked into the VM</span>
+        <span class="hljs-keyword">boolean</span> isBuiltin;
+        <span class="hljs-comment">// Indicates if the native library is loaded</span>
+        <span class="hljs-keyword">boolean</span> loaded;
+        <span class="hljs-function"><span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">load</span><span class="hljs-params">(String name, <span class="hljs-keyword">boolean</span> isBuiltin)</span></span>;
+
+        <span class="hljs-function"><span class="hljs-keyword">native</span> <span class="hljs-keyword">long</span> <span class="hljs-title">find</span><span class="hljs-params">(String name)</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">unload</span><span class="hljs-params">(String name, <span class="hljs-keyword">boolean</span> isBuiltin)</span></span>;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NativeLibrary</span><span class="hljs-params">(Class&lt;?&gt; fromClass, String name, <span class="hljs-keyword">boolean</span> isBuiltin)</span> </span>{
+            <span class="hljs-keyword">this</span>.name = name;
+            <span class="hljs-keyword">this</span>.fromClass = fromClass;
+            <span class="hljs-keyword">this</span>.isBuiltin = isBuiltin;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">finalize</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">synchronized</span> (loadedLibraryNames) {
+                <span class="hljs-keyword">if</span> (fromClass.getClassLoader() != <span class="hljs-keyword">null</span> &amp;&amp; loaded) {
+                    <span class="hljs-comment">/* remove the native library name */</span>
+                    <span class="hljs-keyword">int</span> size = loadedLibraryNames.size();
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+                        <span class="hljs-keyword">if</span> (name.equals(loadedLibraryNames.elementAt(i))) {
+                            loadedLibraryNames.removeElementAt(i);
+                            <span class="hljs-keyword">break</span>;
+                        }
+                    }
+                    <span class="hljs-comment">/* unload the library. */</span>
+                    ClassLoader.nativeLibraryContext.push(<span class="hljs-keyword">this</span>);
+                    <span class="hljs-keyword">try</span> {
+                        unload(name, isBuiltin);
+                    } <span class="hljs-keyword">finally</span> {
+                        ClassLoader.nativeLibraryContext.pop();
+                    }
+                }
+            }
+        }
+        <span class="hljs-comment">// Invoked in the VM to determine the context class in</span>
+        <span class="hljs-comment">// JNI_Load/JNI_Unload</span>
+        <span class="hljs-keyword">static</span> Class&lt;?&gt; getFromClass() {
+            <span class="hljs-keyword">return</span> ClassLoader.nativeLibraryContext.peek().fromClass;
+        }
+    }
+
+    <span class="hljs-comment">// All native library names we&apos;ve loaded.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Vector&lt;String&gt; loadedLibraryNames = <span class="hljs-keyword">new</span> Vector&lt;&gt;();
+
+    <span class="hljs-comment">// Native libraries belonging to system classes.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Vector&lt;NativeLibrary&gt; systemNativeLibraries
+        = <span class="hljs-keyword">new</span> Vector&lt;&gt;();
+
+    <span class="hljs-comment">// Native libraries associated with the class loader.</span>
+    <span class="hljs-keyword">private</span> Vector&lt;NativeLibrary&gt; nativeLibraries = <span class="hljs-keyword">new</span> Vector&lt;&gt;();
+
+    <span class="hljs-comment">// native libraries being loaded/unloaded.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Stack&lt;NativeLibrary&gt; nativeLibraryContext = <span class="hljs-keyword">new</span> Stack&lt;&gt;();
+
+    <span class="hljs-comment">// The paths searched for libraries</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String usr_paths[];
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String sys_paths[];
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String[] initializePath(String propname) {
+        String ldpath = System.getProperty(propname, <span class="hljs-string">&quot;&quot;</span>);
+        String ps = File.pathSeparator;
+        <span class="hljs-keyword">int</span> ldlen = ldpath.length();
+        <span class="hljs-keyword">int</span> i, j, n;
+        <span class="hljs-comment">// Count the separators in the path</span>
+        i = ldpath.indexOf(ps);
+        n = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">while</span> (i &gt;= <span class="hljs-number">0</span>) {
+            n++;
+            i = ldpath.indexOf(ps, i + <span class="hljs-number">1</span>);
+        }
+
+        <span class="hljs-comment">// allocate the array of paths - n :&apos;s = n + 1 path elements</span>
+        String[] paths = <span class="hljs-keyword">new</span> String[n + <span class="hljs-number">1</span>];
+
+        <span class="hljs-comment">// Fill the array with paths from the ldpath</span>
+        n = i = <span class="hljs-number">0</span>;
+        j = ldpath.indexOf(ps);
+        <span class="hljs-keyword">while</span> (j &gt;= <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">if</span> (j - i &gt; <span class="hljs-number">0</span>) {
+                paths[n++] = ldpath.substring(i, j);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (j - i == <span class="hljs-number">0</span>) {
+                paths[n++] = <span class="hljs-string">&quot;.&quot;</span>;
+            }
+            i = j + <span class="hljs-number">1</span>;
+            j = ldpath.indexOf(ps, i);
+        }
+        paths[n] = ldpath.substring(i, ldlen);
+        <span class="hljs-keyword">return</span> paths;
+    }
+
+    <span class="hljs-comment">// Invoked in the java.lang.Runtime class to implement load and loadLibrary.</span>
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loadLibrary</span><span class="hljs-params">(Class&lt;?&gt; fromClass, String name,
+                            <span class="hljs-keyword">boolean</span> isAbsolute)</span> </span>{
+        ClassLoader loader =
+            (fromClass == <span class="hljs-keyword">null</span>) ? <span class="hljs-keyword">null</span> : fromClass.getClassLoader();
+        <span class="hljs-keyword">if</span> (sys_paths == <span class="hljs-keyword">null</span>) {
+            usr_paths = initializePath(<span class="hljs-string">&quot;java.library.path&quot;</span>);
+            sys_paths = initializePath(<span class="hljs-string">&quot;sun.boot.library.path&quot;</span>);
+        }
+        <span class="hljs-keyword">if</span> (isAbsolute) {
+            <span class="hljs-keyword">if</span> (loadLibrary0(fromClass, <span class="hljs-keyword">new</span> File(name))) {
+                <span class="hljs-keyword">return</span>;
+            }
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError(<span class="hljs-string">&quot;Can&apos;t load library: &quot;</span> + name);
+        }
+        <span class="hljs-keyword">if</span> (loader != <span class="hljs-keyword">null</span>) {
+            String libfilename = loader.findLibrary(name);
+            <span class="hljs-keyword">if</span> (libfilename != <span class="hljs-keyword">null</span>) {
+                File libfile = <span class="hljs-keyword">new</span> File(libfilename);
+                <span class="hljs-keyword">if</span> (!libfile.isAbsolute()) {
+                    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError(
+    <span class="hljs-string">&quot;ClassLoader.findLibrary failed to return an absolute path: &quot;</span> + libfilename);
+                }
+                <span class="hljs-keyword">if</span> (loadLibrary0(fromClass, libfile)) {
+                    <span class="hljs-keyword">return</span>;
+                }
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError(<span class="hljs-string">&quot;Can&apos;t load &quot;</span> + libfilename);
+            }
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span> ; i &lt; sys_paths.length ; i++) {
+            File libfile = <span class="hljs-keyword">new</span> File(sys_paths[i], System.mapLibraryName(name));
+            <span class="hljs-keyword">if</span> (loadLibrary0(fromClass, libfile)) {
+                <span class="hljs-keyword">return</span>;
+            }
+            libfile = ClassLoaderHelper.mapAlternativeName(libfile);
+            <span class="hljs-keyword">if</span> (libfile != <span class="hljs-keyword">null</span> &amp;&amp; loadLibrary0(fromClass, libfile)) {
+                <span class="hljs-keyword">return</span>;
+            }
+        }
+        <span class="hljs-keyword">if</span> (loader != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span> ; i &lt; usr_paths.length ; i++) {
+                File libfile = <span class="hljs-keyword">new</span> File(usr_paths[i],
+                                        System.mapLibraryName(name));
+                <span class="hljs-keyword">if</span> (loadLibrary0(fromClass, libfile)) {
+                    <span class="hljs-keyword">return</span>;
+                }
+                libfile = ClassLoaderHelper.mapAlternativeName(libfile);
+                <span class="hljs-keyword">if</span> (libfile != <span class="hljs-keyword">null</span> &amp;&amp; loadLibrary0(fromClass, libfile)) {
+                    <span class="hljs-keyword">return</span>;
+                }
+            }
+        }
+        <span class="hljs-comment">// Oops, it failed</span>
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError(<span class="hljs-string">&quot;no &quot;</span> + name + <span class="hljs-string">&quot; in java.library.path&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">native</span> String <span class="hljs-title">findBuiltinLib</span><span class="hljs-params">(String name)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">loadLibrary0</span><span class="hljs-params">(Class&lt;?&gt; fromClass, <span class="hljs-keyword">final</span> File file)</span> </span>{
+        <span class="hljs-comment">// Check to see if we&apos;re attempting to access a static library</span>
+        String name = findBuiltinLib(file.getName());
+        <span class="hljs-keyword">boolean</span> isBuiltin = (name != <span class="hljs-keyword">null</span>);
+        <span class="hljs-keyword">if</span> (!isBuiltin) {
+            <span class="hljs-keyword">boolean</span> exists = AccessController.doPrivileged(
+                <span class="hljs-keyword">new</span> PrivilegedAction&lt;Object&gt;() {
+                    <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-keyword">return</span> file.exists() ? Boolean.TRUE : <span class="hljs-keyword">null</span>;
+                    }})
+                != <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">if</span> (!exists) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+            <span class="hljs-keyword">try</span> {
+                name = file.getCanonicalPath();
+            } <span class="hljs-keyword">catch</span> (IOException e) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+        }
+        ClassLoader loader =
+            (fromClass == <span class="hljs-keyword">null</span>) ? <span class="hljs-keyword">null</span> : fromClass.getClassLoader();
+        Vector&lt;NativeLibrary&gt; libs =
+            loader != <span class="hljs-keyword">null</span> ? loader.nativeLibraries : systemNativeLibraries;
+        <span class="hljs-keyword">synchronized</span> (libs) {
+            <span class="hljs-keyword">int</span> size = libs.size();
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+                NativeLibrary lib = libs.elementAt(i);
+                <span class="hljs-keyword">if</span> (name.equals(lib.name)) {
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+                }
+            }
+
+            <span class="hljs-keyword">synchronized</span> (loadedLibraryNames) {
+                <span class="hljs-keyword">if</span> (loadedLibraryNames.contains(name)) {
+                    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError
+                        (<span class="hljs-string">&quot;Native Library &quot;</span> +
+                         name +
+                         <span class="hljs-string">&quot; already loaded in another classloader&quot;</span>);
+                }
+                <span class="hljs-comment">/* If the library is being loaded (must be by the same thread,
+                 * because Runtime.load and Runtime.loadLibrary are
+                 * synchronous). The reason is can occur is that the JNI_OnLoad
+                 * function can cause another loadLibrary invocation.
+                 *
+                 * Thus we can use a static stack to hold the list of libraries
+                 * we are loading.
+                 *
+                 * If there is a pending load operation for the library, we
+                 * immediately return success; otherwise, we raise
+                 * UnsatisfiedLinkError.
+                 */</span>
+                <span class="hljs-keyword">int</span> n = nativeLibraryContext.size();
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+                    NativeLibrary lib = nativeLibraryContext.elementAt(i);
+                    <span class="hljs-keyword">if</span> (name.equals(lib.name)) {
+                        <span class="hljs-keyword">if</span> (loader == lib.fromClass.getClassLoader()) {
+                            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+                        } <span class="hljs-keyword">else</span> {
+                            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsatisfiedLinkError
+                                (<span class="hljs-string">&quot;Native Library &quot;</span> +
+                                 name +
+                                 <span class="hljs-string">&quot; is being loaded in another classloader&quot;</span>);
+                        }
+                    }
+                }
+                NativeLibrary lib = <span class="hljs-keyword">new</span> NativeLibrary(fromClass, name, isBuiltin);
+                nativeLibraryContext.push(lib);
+                <span class="hljs-keyword">try</span> {
+                    lib.load(name, isBuiltin);
+                } <span class="hljs-keyword">finally</span> {
+                    nativeLibraryContext.pop();
+                }
+                <span class="hljs-keyword">if</span> (lib.loaded) {
+                    loadedLibraryNames.addElement(name);
+                    libs.addElement(lib);
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+                }
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            }
+        }
+    }
+
+    <span class="hljs-comment">// Invoked in the VM class linking code.</span>
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">long</span> <span class="hljs-title">findNative</span><span class="hljs-params">(ClassLoader loader, String name)</span> </span>{
+        Vector&lt;NativeLibrary&gt; libs =
+            loader != <span class="hljs-keyword">null</span> ? loader.nativeLibraries : systemNativeLibraries;
+        <span class="hljs-keyword">synchronized</span> (libs) {
+            <span class="hljs-keyword">int</span> size = libs.size();
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+                NativeLibrary lib = libs.elementAt(i);
+                <span class="hljs-keyword">long</span> entry = lib.find(name);
+                <span class="hljs-keyword">if</span> (entry != <span class="hljs-number">0</span>)
+                    <span class="hljs-keyword">return</span> entry;
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+
+
+    <span class="hljs-comment">// -- Assertion management --</span>
+
+    <span class="hljs-keyword">final</span> Object assertionLock;
+
+    <span class="hljs-comment">// The default toggle for assertion checking.</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;assertionLock&quot;)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> defaultAssertionStatus = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">// Maps String packageName to Boolean package default assertion status Note</span>
+    <span class="hljs-comment">// that the default package is placed under a null map key.  If this field</span>
+    <span class="hljs-comment">// is null then we are delegating assertion status queries to the VM, i.e.,</span>
+    <span class="hljs-comment">// none of this ClassLoader&apos;s assertion status modification methods have</span>
+    <span class="hljs-comment">// been invoked.</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;assertionLock&quot;)</span>
+    <span class="hljs-keyword">private</span> Map&lt;String, Boolean&gt; packageAssertionStatus = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-comment">// Maps String fullyQualifiedClassName to Boolean assertionStatus If this</span>
+    <span class="hljs-comment">// field is null then we are delegating assertion status queries to the VM,</span>
+    <span class="hljs-comment">// i.e., none of this ClassLoader&apos;s assertion status modification methods</span>
+    <span class="hljs-comment">// have been invoked.</span>
+    <span class="hljs-comment">// @GuardedBy(&quot;assertionLock&quot;)</span>
+    Map&lt;String, Boolean&gt; classAssertionStatus = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-comment">/**
+     * Sets the default assertion status for this class loader.  This setting
+     * determines whether classes loaded by this class loader and initialized
+     * in the future will have assertions enabled or disabled by default.
+     * This setting may be overridden on a per-package or per-class basis by
+     * invoking {<span class="hljs-doctag">@link</span> #setPackageAssertionStatus(String, boolean)} or {<span class="hljs-doctag">@link</span>
+     * #setClassAssertionStatus(String, boolean)}.
+     *
+     * <span class="hljs-doctag">@param</span>  enabled
+     *         &lt;tt&gt;true&lt;/tt&gt; if classes loaded by this class loader will
+     *         henceforth have assertions enabled by default, &lt;tt&gt;false&lt;/tt&gt;
+     *         if they will have assertions disabled by default.
+     *
+     * <span class="hljs-doctag">@since</span>  1.4
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDefaultAssertionStatus</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> enabled)</span> </span>{
+        <span class="hljs-keyword">synchronized</span> (assertionLock) {
+            <span class="hljs-keyword">if</span> (classAssertionStatus == <span class="hljs-keyword">null</span>)
+                initializeJavaAssertionMaps();
+
+            defaultAssertionStatus = enabled;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Sets the package default assertion status for the named package.  The
+     * package default assertion status determines the assertion status for
+     * classes initialized in the future that belong to the named package or
+     * any of its &quot;subpackages&quot;.
+     *
+     * &lt;p&gt; A subpackage of a package named p is any package whose name begins
+     * with &quot;&lt;tt&gt;p.&lt;/tt&gt;&quot;.  For example, &lt;tt&gt;javax.swing.text&lt;/tt&gt; is a
+     * subpackage of &lt;tt&gt;javax.swing&lt;/tt&gt;, and both &lt;tt&gt;java.util&lt;/tt&gt; and
+     * &lt;tt&gt;java.lang.reflect&lt;/tt&gt; are subpackages of &lt;tt&gt;java&lt;/tt&gt;.
+     *
+     * &lt;p&gt; In the event that multiple package defaults apply to a given class,
+     * the package default pertaining to the most specific package takes
+     * precedence over the others.  For example, if &lt;tt&gt;javax.lang&lt;/tt&gt; and
+     * &lt;tt&gt;javax.lang.reflect&lt;/tt&gt; both have package defaults associated with
+     * them, the latter package default applies to classes in
+     * &lt;tt&gt;javax.lang.reflect&lt;/tt&gt;.
+     *
+     * &lt;p&gt; Package defaults take precedence over the class loader&apos;s default
+     * assertion status, and may be overridden on a per-class basis by invoking
+     * {<span class="hljs-doctag">@link</span> #setClassAssertionStatus(String, boolean)}.  &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  packageName
+     *         The name of the package whose package default assertion status
+     *         is to be set. A &lt;tt&gt;null&lt;/tt&gt; value indicates the unnamed
+     *         package that is &quot;current&quot;
+     *         (see section 7.4.2 of
+     *         &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;.)
+     *
+     * <span class="hljs-doctag">@param</span>  enabled
+     *         &lt;tt&gt;true&lt;/tt&gt; if classes loaded by this classloader and
+     *         belonging to the named package or any of its subpackages will
+     *         have assertions enabled by default, &lt;tt&gt;false&lt;/tt&gt; if they will
+     *         have assertions disabled by default.
+     *
+     * <span class="hljs-doctag">@since</span>  1.4
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setPackageAssertionStatus</span><span class="hljs-params">(String packageName,
+                                          <span class="hljs-keyword">boolean</span> enabled)</span> </span>{
+        <span class="hljs-keyword">synchronized</span> (assertionLock) {
+            <span class="hljs-keyword">if</span> (packageAssertionStatus == <span class="hljs-keyword">null</span>)
+                initializeJavaAssertionMaps();
+
+            packageAssertionStatus.put(packageName, enabled);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Sets the desired assertion status for the named top-level class in this
+     * class loader and any nested classes contained therein.  This setting
+     * takes precedence over the class loader&apos;s default assertion status, and
+     * over any applicable per-package default.  This method has no effect if
+     * the named class has already been initialized.  (Once a class is
+     * initialized, its assertion status cannot change.)
+     *
+     * &lt;p&gt; If the named class is not a top-level class, this invocation will
+     * have no effect on the actual assertion status of any class. &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  className
+     *         The fully qualified class name of the top-level class whose
+     *         assertion status is to be set.
+     *
+     * <span class="hljs-doctag">@param</span>  enabled
+     *         &lt;tt&gt;true&lt;/tt&gt; if the named class is to have assertions
+     *         enabled when (and if) it is initialized, &lt;tt&gt;false&lt;/tt&gt; if the
+     *         class is to have assertions disabled.
+     *
+     * <span class="hljs-doctag">@since</span>  1.4
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setClassAssertionStatus</span><span class="hljs-params">(String className, <span class="hljs-keyword">boolean</span> enabled)</span> </span>{
+        <span class="hljs-keyword">synchronized</span> (assertionLock) {
+            <span class="hljs-keyword">if</span> (classAssertionStatus == <span class="hljs-keyword">null</span>)
+                initializeJavaAssertionMaps();
+
+            classAssertionStatus.put(className, enabled);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Sets the default assertion status for this class loader to
+     * &lt;tt&gt;false&lt;/tt&gt; and discards any package defaults or class assertion
+     * status settings associated with the class loader.  This method is
+     * provided so that class loaders can be made to ignore any command line or
+     * persistent assertion status settings and &quot;start with a clean slate.&quot;
+     *
+     * <span class="hljs-doctag">@since</span>  1.4
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clearAssertionStatus</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">/*
+         * Whether or not &quot;Java assertion maps&quot; are initialized, set
+         * them to empty maps, effectively ignoring any present settings.
+         */</span>
+        <span class="hljs-keyword">synchronized</span> (assertionLock) {
+            classAssertionStatus = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+            packageAssertionStatus = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+            defaultAssertionStatus = <span class="hljs-keyword">false</span>;
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the assertion status that would be assigned to the specified
+     * class if it were to be initialized at the time this method is invoked.
+     * If the named class has had its assertion status set, the most recent
+     * setting will be returned; otherwise, if any package default assertion
+     * status pertains to this class, the most recent setting for the most
+     * specific pertinent package default assertion status is returned;
+     * otherwise, this class loader&apos;s default assertion status is returned.
+     * &lt;/p&gt;
+     *
+     * <span class="hljs-doctag">@param</span>  className
+     *         The fully qualified class name of the class whose desired
+     *         assertion status is being queried.
+     *
+     * <span class="hljs-doctag">@return</span>  The desired assertion status of the specified class.
+     *
+     * <span class="hljs-doctag">@see</span>  #setClassAssertionStatus(String, boolean)
+     * <span class="hljs-doctag">@see</span>  #setPackageAssertionStatus(String, boolean)
+     * <span class="hljs-doctag">@see</span>  #setDefaultAssertionStatus(boolean)
+     *
+     * <span class="hljs-doctag">@since</span>  1.4
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">desiredAssertionStatus</span><span class="hljs-params">(String className)</span> </span>{
+        <span class="hljs-keyword">synchronized</span> (assertionLock) {
+            <span class="hljs-comment">// assert classAssertionStatus   != null;</span>
+            <span class="hljs-comment">// assert packageAssertionStatus != null;</span>
+
+            <span class="hljs-comment">// Check for a class entry</span>
+            Boolean result = classAssertionStatus.get(className);
+            <span class="hljs-keyword">if</span> (result != <span class="hljs-keyword">null</span>)
+                <span class="hljs-keyword">return</span> result.booleanValue();
+
+            <span class="hljs-comment">// Check for most specific package entry</span>
+            <span class="hljs-keyword">int</span> dotIndex = className.lastIndexOf(<span class="hljs-string">&quot;.&quot;</span>);
+            <span class="hljs-keyword">if</span> (dotIndex &lt; <span class="hljs-number">0</span>) { <span class="hljs-comment">// default package</span>
+                result = packageAssertionStatus.get(<span class="hljs-keyword">null</span>);
+                <span class="hljs-keyword">if</span> (result != <span class="hljs-keyword">null</span>)
+                    <span class="hljs-keyword">return</span> result.booleanValue();
+            }
+            <span class="hljs-keyword">while</span>(dotIndex &gt; <span class="hljs-number">0</span>) {
+                className = className.substring(<span class="hljs-number">0</span>, dotIndex);
+                result = packageAssertionStatus.get(className);
+                <span class="hljs-keyword">if</span> (result != <span class="hljs-keyword">null</span>)
+                    <span class="hljs-keyword">return</span> result.booleanValue();
+                dotIndex = className.lastIndexOf(<span class="hljs-string">&quot;.&quot;</span>, dotIndex-<span class="hljs-number">1</span>);
+            }
+
+            <span class="hljs-comment">// Return the classloader default</span>
+            <span class="hljs-keyword">return</span> defaultAssertionStatus;
+        }
+    }
+
+    <span class="hljs-comment">// Set up the assertions with information provided by the VM.</span>
+    <span class="hljs-comment">// Note: Should only be called inside a synchronized block</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initializeJavaAssertionMaps</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// assert Thread.holdsLock(assertionLock);</span>
+
+        classAssertionStatus = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        packageAssertionStatus = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        AssertionStatusDirectives directives = retrieveDirectives();
+
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; directives.classes.length; i++)
+            classAssertionStatus.put(directives.classes[i],
+                                     directives.classEnabled[i]);
+
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; directives.packages.length; i++)
+            packageAssertionStatus.put(directives.packages[i],
+                                       directives.packageEnabled[i]);
+
+        defaultAssertionStatus = directives.deflt;
+    }
+
+    <span class="hljs-comment">// Retrieves the assertion directives from the VM.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">native</span> AssertionStatusDirectives <span class="hljs-title">retrieveDirectives</span><span class="hljs-params">()</span></span>;
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SystemClassLoaderAction</span>
+    <span class="hljs-keyword">implements</span> <span class="hljs-title">PrivilegedExceptionAction</span>&lt;<span class="hljs-title">ClassLoader</span>&gt; </span>{
+    <span class="hljs-keyword">private</span> ClassLoader parent;
+
+    SystemClassLoaderAction(ClassLoader parent) {
+        <span class="hljs-keyword">this</span>.parent = parent;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ClassLoader <span class="hljs-title">run</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        String cls = System.getProperty(<span class="hljs-string">&quot;java.system.class.loader&quot;</span>);
+        <span class="hljs-keyword">if</span> (cls == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> parent;
+        }
+
+        Constructor&lt;?&gt; ctor = Class.forName(cls, <span class="hljs-keyword">true</span>, parent)
+            .getDeclaredConstructor(<span class="hljs-keyword">new</span> Class&lt;?&gt;[] { ClassLoader.class });
+        ClassLoader sys = (ClassLoader) ctor.newInstance(
+            <span class="hljs-keyword">new</span> Object[] { parent });
+        Thread.currentThread().setContextClassLoader(sys);
+        <span class="hljs-keyword">return</span> sys;
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Class.html" class="navigation navigation-prev " aria-label="Previous page: Class">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Throwable.html" class="navigation navigation-next " aria-label="Next page: Throwable">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ClassLoader","level":"1.2.1.32","depth":3,"next":{"title":"Throwable","level":"1.2.1.33","depth":3,"path":"src/java/lang/Throwable.md","ref":"src/java/lang/Throwable.md","articles":[]},"previous":{"title":"Class","level":"1.2.1.31","depth":3,"path":"src/java/lang/Class.md","ref":"src/java/lang/Class.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/java/lang/ClassLoader.md","mtime":"2019-09-12T03:22:28.522Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T03:30:06.914Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
